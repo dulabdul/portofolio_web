@@ -1,0 +1,336 @@
+html {
+  scroll-behavior: smooth;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.topnav a:hover {
+  color: #000;
+  border-bottom: 3px solid #af0404;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid #af0404;
+}
+/* akhir navigasi */
+/* ini CSS untuk Header */
+.jumbotron {
+  padding: 6rem;
+}
+.icon a {
+  padding-left: 30px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #000;
+  float: left;
+  display: block;
+  padding: 8px 12px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+.icon a:hover {
+  color: #af0404;
+  border-bottom: 3px solid #af0404;
+}
+.icon a.active {
+  border-bottom: 3px solid #af0404;
+}
+.hero span {
+  color: #af0404;
+}
+/* ini akhir CSS Header */
+/* about */
+.skills-bar {
+  position: relative;
+}
+.about {
+  background-color: #aa01013a;
+}
+.about-hobi h6 {
+  color: #af0404;
+}
+.progress-icon {
+  color: #af0404;
+}
+.progress-icon i {
+  font-size: 32px;
+}
+.heading__tagline {
+  color: #af0404;
+}
+.img-about {
+  border-radius: 8px;
+}
+.paragraf-about::first-letter {
+  font-size: 60px;
+  line-height: 60px;
+  color: #af0404;
+}
+.heading__name span {
+  color: #af0404;
+}
+section {
+  padding-top: 4rem;
+}
+.section_head_about {
+  margin-bottom: 20px;
+  position: relative;
+}
+.section_head_about h3 {
+  position: relative;
+  padding: 10px 0 15px 10px;
+  line-height: 1px;
+  border-left: 1px solid #eee;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.section_head_about h3:before {
+  background: #af0404;
+}
+.section_head_about h3:before {
+  content: '';
+  width: 4px;
+  height: 38px;
+  position: absolute;
+  left: -1px;
+  bottom: 0;
+}
+/* akhir About */
+/*contact */
+.icon-contact i {
+  font-size: 45px;
+  color: #af0404;
+}
+.section_head_contact {
+  margin-bottom: 35px;
+  position: relative;
+}
+.section_head_contact h4 {
+  position: relative;
+  padding: 0 0 0 15px;
+  line-height: 1px;
+  border-left: 1px solid #eee;
+  letter-spacing: 2px;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.section_head_contact h4 span {
+  font-weight: 300;
+  display: block;
+  padding-bottom: 35px;
+}
+.section_head_contact h4:before {
+  background: #af0404;
+}
+.section_head_contact h4:before {
+  content: '';
+  width: 1px;
+  height: 45px;
+  position: absolute;
+  left: -1px;
+  bottom: 0;
+}
+.section_head_sosmed {
+  padding-top: 40px;
+  margin-bottom: 60px;
+  position: relative;
+}
+.section_head_sosmed h4 {
+  position: relative;
+  padding: 0 0 0 15px;
+  line-height: 1px;
+  border-left: 1px solid #eee;
+  letter-spacing: 2px;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.section_head_sosmed h4 span {
+  font-weight: 300;
+  display: block;
+  padding-bottom: 35px;
+}
+.section_head_sosmed h4::before {
+  background: #af0404;
+}
+.section_head_sosmed h4::before {
+  content: '';
+  width: 1px;
+  height: 55px;
+  position: absolute;
+  left: -1px;
+  bottom: 0;
+}
+.icon-contact a:hover {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #000;
+}
+.social-media-container {
+  background-color: #f7f9fc;
+  padding: 30px 20px;
+  position: relative;
+}
+.social-media-container ul {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.social-media-container a {
+  color: #af0404;
+  font-size: 16px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 100%;
+  margin-right: 15px;
+  box-shadow: 2px 2px 20px rgb(0 0 0 / 15%);
+  transition: all 0.2s ease-in-out;
+}
+.social-media-container a:hover {
+  color: #000;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #af0404;
+  transform: scale(1.1);
+}
+.social-media-link i {
+  font-size: 38px;
+}
+.social-media-link a {
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.social-media-link li {
+  display: inline-block;
+  margin-bottom: 5px;
+  list-style: none;
+}
+.social-media-container::before {
+  border-color: #af0404 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #af0404;
+}
+.social-media-container::before {
+  left: 0;
+  top: 0;
+}
+.social-media-container::after,
+.social-media-container::before {
+  border-style: solid;
+  border-width: 2px;
+  content: '';
+  display: block;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+.social-media-container::after {
+  border-color: rgba(0, 0, 0, 0) #af0404 #af0404 rgba(0, 0, 0, 0);
+}
+.social-media-container::after {
+  bottom: 0;
+  right: 0;
+}
+
+/* akhir contact*/
+/*img profile*/
+.profile-img {
+  width: 270px;
+  transition: transform 0.2s; /* Animation */
+}
+.profile-img:hover {
+  transform: scale(1.1);
+}
+.go {
+  min-width: 44px;
+  min-height: 44px;
+}
+.nav-name a {
+  color: #af0404 !important;
+  font-weight: 600;
+}
+.hamburger,
+.button-call {
+  min-width: 44px;
+  min-height: 44px;
+}
+/* img project */
+.project-img {
+  transition: transform 0.2s;
+}
+.project-img:hover {
+  transform: scale(1.1);
+}
+/*responsive CSS */
+@media screen and (max-width: 480px) {
+  .card-project {
+    width: 85%;
+    margin: auto;
+  }
+  .about-hobi i {
+    font-size: 75px;
+  }
+  .about-img img {
+    width: 65%;
+    margin: auto;
+    display: block;
+  }
+  .jumbotron {
+    padding: 1rem;
+  }
+  .profile-img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 480px) {
+  .card-project {
+    width: 95%;
+    margin: auto;
+  }
+  .about-hobi i {
+    font-size: 110px;
+  }
+  .about-img img {
+    width: 70%;
+    margin: auto;
+    display: block;
+  }
+  .jumbotron {
+    padding: 3rem;
+  }
+}
+/* CSS Footer */
+.footer {
+  background-color: #aa01013a;
+  display: block;
+}
+.footer p {
+  font-weight: 600;
+}
+.about-hobi i {
+  font-size: 140px;
+}
+/* Akhir Css Footer */
+/* Font */
+.fs-4 {
+  font-size: calc(1.275rem + 0.3vw) !important;
+}
+.fs-2 {
+  font-size: calc(1.325rem + 0.9vw) !important;
+}
+.fs-5 {
+  font-size: 1.25rem !important;
+}
+h6,
+h5 {
+  font-weight: 600 !important;
+}
