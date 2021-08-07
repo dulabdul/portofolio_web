@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+body{
+  position: relative;
+}
 .topnav a {
   float: left;
   display: block;
@@ -11,7 +14,15 @@ html {
   border-bottom: 3px solid transparent;
   transition: all 0.2s ease-in-out;
 }
-
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+  background-color: #af0404 !important;
+  color: #fff !important;
+  font-weight: 600;
+  padding: 6px;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: #000;
+}
 .topnav a:hover {
   color: #000;
   border-bottom: 3px solid #af0404;
@@ -54,7 +65,9 @@ html {
 .about {
   background-color: #aa01013a;
 }
-.about-hobi h6 {
+.about-hobi p {
+  font-size: 24px;
+  font-weight: 600;
   color: #af0404;
 }
 .progress-icon {
@@ -68,6 +81,14 @@ html {
 }
 .img-about {
   border-radius: 8px;
+}
+.heading hr{
+  box-sizing: border-box;
+  overflow: visible;
+  margin: auto;
+  width: 60px;
+  height: 3px;
+  background-color: #af0404;
 }
 .paragraf-about::first-letter {
   font-size: 60px;
@@ -114,7 +135,7 @@ section {
   margin-bottom: 35px;
   position: relative;
 }
-.section_head_contact h4 {
+.section_head_contact h3 {
   position: relative;
   padding: 0 0 0 15px;
   line-height: 1px;
@@ -124,15 +145,15 @@ section {
   font-weight: 600;
   margin-bottom: 0;
 }
-.section_head_contact h4 span {
+.section_head_contact h3 span {
   font-weight: 300;
   display: block;
   padding-bottom: 35px;
 }
-.section_head_contact h4:before {
+.section_head_contact h3:before {
   background: #af0404;
 }
-.section_head_contact h4:before {
+.section_head_contact h3:before {
   content: '';
   width: 1px;
   height: 45px;
@@ -145,7 +166,7 @@ section {
   margin-bottom: 60px;
   position: relative;
 }
-.section_head_sosmed h4 {
+.section_head_sosmed h3 {
   position: relative;
   padding: 0 0 0 15px;
   line-height: 1px;
@@ -155,15 +176,20 @@ section {
   font-weight: 600;
   margin-bottom: 0;
 }
-.section_head_sosmed h4 span {
+.section__contact p{
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin-bottom: .5rem;
+}
+.section_head_sosmed h3 span {
   font-weight: 300;
   display: block;
   padding-bottom: 35px;
 }
-.section_head_sosmed h4::before {
+.section_head_sosmed h3::before {
   background: #af0404;
 }
-.section_head_sosmed h4::before {
+.section_head_sosmed h3::before {
   content: '';
   width: 1px;
   height: 55px;
@@ -205,6 +231,7 @@ section {
 }
 .social-media-link i {
   font-size: 38px;
+  margin-top: 10px;
 }
 .social-media-link a {
   text-decoration: none;
@@ -270,11 +297,23 @@ section {
 .project-img:hover {
   transform: scale(1.1);
 }
+.card-title{
+  font-weight: 600;
+  font-size: 18px;
+}
 /*responsive CSS */
 @media screen and (max-width: 480px) {
+  .ml-1, .mx-1{
+    margin-top: 8px !important;
+    margin-left: 0 !important;
+  }
   .card-project {
     width: 85%;
     margin: auto;
+  }
+  .card-title{
+    font-weight: 600;
+    font-size: 22px;
   }
   .about-hobi i {
     font-size: 75px;
@@ -289,6 +328,12 @@ section {
   }
   .profile-img {
     width: 200px;
+  }
+  a.download.button-sm-call.ml-3.btn.btn-outline-danger.text-start{
+    color: #000 !important;
+  }
+  a.download.button-sm-call.ml-3.btn.btn-outline-danger.text-start:hover{
+    color: #fff;
   }
 }
 @media screen and (max-width: 900px) and (min-width: 480px) {
@@ -315,6 +360,7 @@ section {
 }
 .footer p {
   font-weight: 600;
+  font-size: 18px;
 }
 .about-hobi i {
   font-size: 140px;
@@ -330,7 +376,11 @@ section {
 .fs-5 {
   font-size: 1.25rem !important;
 }
-h6,
 h5 {
   font-weight: 600 !important;
+}
+@media (min-width:1200px){
+  .container, .container-sm, .container-md, .container-lg, .container-xl{
+    max-width: 1200px !important;
+  }
 }
