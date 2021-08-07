@@ -1,7 +1,12 @@
+/* eslint-disable global-require */
+/* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
+const ImageminMozjpeg = require('imagemin-mozjpeg');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
   entry: './src/index.js',
@@ -9,6 +14,30 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+      minSize: 20000,
+      maxSize: 70000,
+      minChunks: 1,
+      maxAsyncRequests: 30,
+      maxInitialRequests: 30,
+      automaticNameDelimiter: '~',
+      enforceSizeThreshold: 50000,
+      cacheGroups: {
+        defaultVendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10,
+        },
+        default: {
+          minChunks: 2,
+          priority: -20,
+          reuseExistingChunk: true,
+        },
+      },
+    },
+  },
+
   module: {
     rules: [
       /* rules buat component */
@@ -23,7 +52,7 @@ module.exports = {
         include: /styles/,
         use: ['style-loader', 'css-loader'],
       },
-      //rules gambar
+      // rules gambar
       {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
@@ -32,7 +61,7 @@ module.exports = {
           },
         ],
       },
-      //rules svg
+      // rules svg
       {
         test: /\.svg$/,
         loader: 'svg-inline-loader',
@@ -52,7 +81,7 @@ module.exports = {
             // Loader for webpack to process CSS with PostCSS
             loader: 'postcss-loader',
             options: {
-              plugins: function () {
+              plugins() {
                 return [require('autoprefixer')];
               },
             },
@@ -67,9 +96,18 @@ module.exports = {
     ],
   },
   plugins: [
+    new BundleAnalyzerPlugin(),
     new CleanWebpackPlugin(),
+    new ImageminWebpackPlugin({
+      plugins: [
+        ImageminMozjpeg({
+          quality: 50,
+          progressive: true,
+        }),
+      ],
+    }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src/index.html'),
+      template: path.resolve(__dirname, 'src/templates/index.html'),
       filename: 'index.html',
     }),
     new CopyWebpackPlugin({
