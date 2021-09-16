@@ -9,18 +9,20 @@ class kontenBar extends HTMLElement {
       <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
 
       <section id="home">
-          <div class="container-sm">
+          <div class="container">
               <div class="jumbotron bg-transparent">
                   <div class="row justify-content-evenly">
                       <div class="col-md-6 text-start hero">
-                          <h1 class="display-4 font-weight-bold">Hallo,</h1>
-                          <h1 class="display-4 font-weight-bold">Saya <span>Abdul</span></h1>
-                          <h1 class="display-4 font-weight-normal fs-2 mt-4">Front-End Web Developer</h1>
+                          <h1 class="hallo display-4 font-weight-bold"></h1>
+                          <span class="display-4 font-weight-bold"></span>
+                          
+                          <h1 class="title-job display-4 font-weight-normal fs-2 mt-4"></h1>
                       </div>
                       <div class="col-md-6 mt-4">
                       <picture>
-                      <source class="lazyload profile-img rounded-circle img-thumbnail shadow-sm img-fluid" media="(max-width: 600px)" srcset="./images/abdul-small.jpg">
-                      <img src="./images/abdul-large.jpg" alt="Abdulrahman"
+                      <source media="(max-width: 600px)" srcset="./images/abdul-small.jpg">
+                      <img  data-aos="flip-up" data-aos-duration="1500"
+ src="./images/abdul-large.jpg" alt="Abdulrahman"
                       class="lazyload profile-img rounded-circle img-thumbnail shadow-sm img-fluid">
                   </picture>
                       </div>
@@ -48,21 +50,22 @@ class kontenBar extends HTMLElement {
           </svg>
       </section>
       <section id="about" class="about">
-          <div class="container-sm">
+          <div class="container">
               <div class="row justify-content-center">
                   <div class="col-md-12 heading">
                       <h2 class="text-center mb-3 fs-1 heading__tagline font-weight-bold">About Me</h2>
                       <hr>
                   </div>
-                  <div class="col-md-4 about-img">
+                  <div class="col-md-4 about-img mt-4">
                   <picture>
                   <source class="lazyload img-fluid img-about mb-4" media="(max-width: 600px)" srcset="./images/abdul_2-small.jpg">
-                  <img src="./images/abdul_2-large.jpg" alt="Abdulrahman"
+                  <img data-aos="fade-right" data-aos-delay="50"
+                  data-aos-duration="1200" src="./images/abdul_2-large.jpg" alt="Abdulrahman"
                   class="lazyload img-fluid img-about mb-4">
               </picture>
                   </div>
                   <div class="col-md-8 heading__name ">
-                      <p class="text-start fs-5 paragraf-about">Perkenalkan Saya <span class="font-weight-bold">Abdul
+                      <p data-aos="fade-left" data-aos-delay="150" data-aos-duration="1500" data-aos-once="true" class="text-start fs-5 paragraf-about">Perkenalkan Saya <span class="font-weight-bold">Abdul
                               Rahman,
                           </span>saat ini
                           tinggal di Banten, Kota Serang. Saya seorang
@@ -70,21 +73,21 @@ class kontenBar extends HTMLElement {
                           mengikuti organisasi Gerakan Disiplin Siswa
                           dan menjabat sebagai Ketua Umum periode 2019-2020. Saya aktif di kegiatan organisasi seperti
                           event graduation, porseni, bansos organisasi, dan lainnya.</p>
-                      <p class="text-start fs-5">
+                      <p data-aos="fade-left" data-aos-delay="200" data-aos-duration="1500" data-aos-once="true" class="text-start fs-5">
                           Saya memiliki ketertarikan di bidang Web Developer khususnya Front-End Web Developer, selama
                           pandemi sekolah saya melaksanakan kegiatan belajar secara daring, tetapi bagi saya sekolah
                           daring bukan berarti berhenti belajar atau menjadi halangan, saya mencoba untuk improvisasi
                           skill saya dengan
                           mengikuti beasiswa dari Dicoding di learning path Front-End Web Developer.
                       </p>
-                      <p class="text-start fs-5">
+                      <p data-aos="fade-left" data-aos-delay="250"data-aos-duration="1500" data-aos-once="true" class="text-start fs-5">
                           Saya memiliki karakter disiplin, jujur, dan bertanggung jawab.Selain itu, saya bisa
                           bekerja secara tim
                           ataupun individu untuk menyelesaikan suatu kerjaan, saya memiliki kenginan kuat untuk
                           belajar
                           hal baru dalam hidup saya.
                       </p>
-                      <a class="download button-sm-call ml-3 btn btn-danger text-start"
+                      <a data-aos="fade-left" data-aos-delay="300"data-aos-duration="1500" data-aos-once="true" class="download button-sm-call ml-3 btn btn-danger text-start"
                           href="https://drive.google.com/file/d/1SgUnerjouMq7G4fcayHyufraeaFpQD8M/view?usp=sharing"
                           rel="noopener" aria-label="Download" target="_blank" role="button"><i class="fas fa-download"></i> Download
                           Resume</a>
@@ -93,7 +96,7 @@ class kontenBar extends HTMLElement {
                       <h3 class="text-start mt-4 mb-3 fs-2">Keahlian</h3>
                   </div>
                   <div class="col-md-6">
-                      <div class="card shadow mb-3">
+                      <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="100"data-aos-duration="1200">
                           <div class="shadow-sm">
                               <div class="row">
                                   <div class="col-6 progress-icon">
@@ -102,18 +105,14 @@ class kontenBar extends HTMLElement {
                                           <span class="text-dark ml-2">HTML 5 </span></p>
                                   </div>
                                   <div class="col-6">
-                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">70%</p>
+                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">Advanced</p>
                                   </div>
-                              </div>
-                              <div class="progress" style="height: 8px">
-                                  <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;"
-                                      aria-valuenow="70" aria-label="Progres-Bar" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                           </div>
                       </div>
                   </div>
                   <div class="col-md-6">
-                      <div class="card shadow mb-3">
+                      <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="150"data-aos-duration="1200">
                           <div class="shadow-sm">
                               <div class="row">
                                   <div class="col-6 progress-icon">
@@ -121,18 +120,14 @@ class kontenBar extends HTMLElement {
                                           <span class="text-dark ml-2">CSS 3 </span></p>
                                   </div>
                                   <div class="col-6">
-                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">65%</p>
+                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">Intermediate</p>
                                   </div>
-                              </div>
-                              <div class="progress" style="height: 8px">
-                                  <div class="progress-bar bg-danger" role="progressbar" style="width: 65%;"
-                                      aria-valuenow="65" aria-label="Progres-Bar" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                           </div>
                       </div>
                   </div>
                   <div class="col-md-6">
-                      <div class="card shadow mb-3">
+                      <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="200"data-aos-duration="1200">
                           <div class="shadow-sm">
                               <div class="row">
                                   <div class="col-6 progress-icon">
@@ -140,18 +135,14 @@ class kontenBar extends HTMLElement {
                                           <span class="text-dark ml-2">JavaScript </span></p>
                                   </div>
                                   <div class="col-6">
-                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">50%</p>
+                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">Beginner</p>
                                   </div>
-                              </div>
-                              <div class="progress" style="height: 8px">
-                                  <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;"
-                                      aria-valuenow="50" aria-label="Progres-Bar" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                           </div>
                       </div>
                   </div>
                   <div class="col-md-6">
-                      <div class="card shadow mb-3">
+                      <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="200"data-aos-duration="1200">
                           <div class="shadow-sm">
                               <div class="row">
                                   <div class="col-6 progress-icon">
@@ -159,18 +150,14 @@ class kontenBar extends HTMLElement {
                                           <span class="text-dark ml-2">Node.Js </span></p>
                                   </div>
                                   <div class="col-6">
-                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">55%</p>
+                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">Beginner</p>
                                   </div>
-                              </div>
-                              <div class="progress" style="height: 8px">
-                                  <div class="progress-bar bg-danger" role="progressbar" style="width: 55%;"
-                                      aria-valuenow="55" aria-label="Progres-Bar" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                           </div>
                       </div>
                   </div>
                   <div class="col-md-6">
-                      <div class="card shadow mb-3">
+                      <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="250"data-aos-duration="1200">
                           <div class="shadow-sm">
                               <div class="row">
                                   <div class="col-6 progress-icon">
@@ -178,18 +165,14 @@ class kontenBar extends HTMLElement {
                                           <span class="text-dark ml-2">Bootstrap </span></p>
                                   </div>
                                   <div class="col-6">
-                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">50%</p>
+                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">Intermediate</p>
                                   </div>
-                              </div>
-                              <div class="progress" style="height: 8px">
-                                  <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;"
-                                      aria-valuenow="50" aria-label="Progres-Bar" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                           </div>
                       </div>
                   </div>
                   <div class="col-md-6">
-                      <div class="card shadow mb-3">
+                      <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="300"data-aos-duration="1200">
                           <div class="shadow-sm">
                               <div class="row">
                                   <div class="col-6 progress-icon">
@@ -197,18 +180,14 @@ class kontenBar extends HTMLElement {
                                           <span class="text-dark ml-2">Webpack </span></p>
                                   </div>
                                   <div class="col-6">
-                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">60%</p>
+                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">Intermediate</p>
                                   </div>
-                              </div>
-                              <div class="progress" style="height: 8px">
-                                  <div class="progress-bar bg-danger" role="progressbar" style="width: 60%;"
-                                      aria-valuenow="60" aria-label="Progres-Bar" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                           </div>
                       </div>
                   </div>
                   <div class="col-md-6">
-                      <div class="card shadow mb-3">
+                      <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="350"data-aos-duration="1200">
                           <div class="shadow-sm">
                               <div class="row">
                                   <div class="col-6 progress-icon">
@@ -217,18 +196,14 @@ class kontenBar extends HTMLElement {
                                           <span class="text-dark ml-2">Git </span></p>
                                   </div>
                                   <div class="col-6">
-                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">55%</p>
+                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">Intermediate</p>
                                   </div>
-                              </div>
-                              <div class="progress" style="height: 8px">
-                                  <div class="progress-bar bg-danger" role="progressbar" style="width: 55%;"
-                                      aria-valuenow="55" aria-label="Progres-Bar" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                           </div>
                       </div>
                   </div>
                   <div class="col-md-6">
-                      <div class="card shadow mb-3">
+                      <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="400"data-aos-duration="1200">
                           <div class="shadow-sm">
                               <div class="row">
                                   <div class="col-8 progress-icon">
@@ -236,18 +211,15 @@ class kontenBar extends HTMLElement {
                                           <span class="text-dark ml-2">PWA (Progressive Web App) </span></p>
                                   </div>
                                   <div class="col-4">
-                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">60%</p>
+                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">Intermediate</p>
                                   </div>
                               </div>
-                              <div class="progress" style="height: 8px">
-                                  <div class="progress-bar bg-danger" role="progressbar" style="width: 60%;"
-                                      aria-valuenow="60" aria-label="Progres-Bar" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
+
                           </div>
                       </div>
                   </div>
                   <div class="col-md-6">
-                      <div class="card shadow mb-3">
+                      <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="450"data-aos-duration="1200">
                           <div class="shadow-sm">
                               <div class="row">
                                   <div class="col-8 progress-icon">
@@ -255,12 +227,8 @@ class kontenBar extends HTMLElement {
                                           <span class="text-dark ml-2">Materialize CSS</span></p>
                                   </div>
                                   <div class="col-4">
-                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">45%</p>
+                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">Intermediate</p>
                                   </div>
-                              </div>
-                              <div class="progress" style="height: 8px">
-                                  <div class="progress-bar bg-danger" role="progressbar" style="width: 45%;"
-                                      aria-valuenow="45" aria-label="Progres-Bar" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                           </div>
                       </div>
@@ -272,15 +240,15 @@ class kontenBar extends HTMLElement {
                   <div class="col-md-12 section_head_about">
                       <h3 class="text-start mt-4 mb-2 fs-2">Hobi</h3>
                   </div>
-                  <div class="col-md about-hobi text-center">
+                  <div data-aos="fade-up-right" data-aos-delay="150"data-aos-duration="1100" class="col-md about-hobi text-center">
                       <i class="fas fa-hiking"></i>
                       <p class="mt-3 fs-4">Hiking</p>
                   </div>
-                  <div class="col-md about-hobi text-center">
+                  <div data-aos="fade-up" data-aos-delay="200"data-aos-duration="1100" class="col-md about-hobi text-center">
                       <i class="fas fa-film"></i>
                       <p class="mt-3 fs-4">Menonton Film/Anime</p>
                   </div>
-                  <div class="col-md about-hobi text-center">
+                  <div data-aos="fade-up-left" data-aos-delay="250"data-aos-duration="1100" class="col-md about-hobi text-center">
                       <i class="fas fa-running"></i>
                       <p class="mt-3 fs-4">Running</p>
                   </div>
@@ -300,8 +268,8 @@ class kontenBar extends HTMLElement {
                       <hr>
                   </div>
                   <div class="col-md-4 mb-3">
-                      <div class="card card-project shadow">
-                      <a href="https://corona-info-3aea2.web.app/" rel="noopener" aria-label="Website Covid" target="_blank">
+                      <div class="card card-project shadow" data-aos="fade-up-right" data-aos-delay="100"data-aos-duration="1200">
+                      <a href="https://infocorona-e90fb.web.app/" rel="noopener" aria-label="Website Covid" target="_blank">
                       <picture>
                       <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./images/project1-small.jpg">
                       <img src="./images/project1-large.jpg" alt="Website Covid"
@@ -311,7 +279,7 @@ class kontenBar extends HTMLElement {
                           <div class="card-body">
                               <p class="card-title">Live Report Covid-19</p>
                               
-                              <a href="https://corona-info-3aea2.web.app/" rel="noopener" aria-label="Website Covid" target="_blank"
+                              <a href="https://infocorona-e90fb.web.app/" rel="noopener" aria-label="Website Covid" target="_blank"
                                   class="go btn btn-danger"><i class="fas fa-external-link-alt"></i> Open
                                   Web</a>
                                   <a href="https://github.com/dulabdul/Web_Corona_Info.git" rel="noopener" aria-label="Github_covid" target="_blank" class="go ml-1 btn btn-danger"><i class="fab fa-github" style="font-size:21px;"></i> Open
@@ -320,7 +288,7 @@ class kontenBar extends HTMLElement {
                       </div>
                   </div>
                   <div class="col-md-4 mb-3">
-                      <div class="card card-project shadow">
+                      <div class="card card-project shadow" data-aos="fade-up" data-aos-delay="150"data-aos-duration="1200">
                       <a href="https://mysoccer-584dc.web.app/" rel="noopener" aria-label="Website mySoccer" target="_blank">
                       <picture>
                       <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./images/project2-small.jpg">
@@ -338,7 +306,7 @@ class kontenBar extends HTMLElement {
                       </div>
                   </div>
                   <div class="col-md-4 mb-3">
-                      <div class="card card-project shadow">
+                      <div class="card card-project shadow" data-aos="fade-up-left" data-aos-delay="200"data-aos-duration="1200">
                       <a href="https://theresto-fc91d.web.app/" rel="noopener" aria-label="Website The Resto" target="_blank">
                       <picture>
                       <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./images/project3-small.jpg">
@@ -356,7 +324,7 @@ class kontenBar extends HTMLElement {
                       </div>
                   </div>
                   <div class="col-md-4 mb-3">
-                      <div class="card card-project shadow">
+                      <div class="card card-project shadow" data-aos="fade-up-right" data-aos-delay="250"data-aos-duration="1200">
                       <a href="https://wawastore24.my.id/" rel="noopener" aria-label="Website WawaStore"  target="_blank">
                       <picture>
                       <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./images/wawastore-small.jpg">
@@ -372,7 +340,7 @@ class kontenBar extends HTMLElement {
                       </div>
                   </div>
                   <div class="col-md-4 mb-3">
-                      <div class="card card-project shadow">
+                      <div class="card card-project shadow" data-aos="fade-up-left" data-aos-delay="300"data-aos-duration="1200">
                       <a href="https://nonton-kuy.web.app/" rel="noopener" aria-label="Website nonton kuy" target="_blank">
                       <picture>
                       <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./images/project4-small.jpg">
@@ -389,7 +357,26 @@ class kontenBar extends HTMLElement {
                           </div>
                       </div>
                   </div>
-
+                  <div class="col-md-4 mb-3">
+                  <div class="card card-project shadow" data-aos="fade-up-left" data-aos-delay="300"data-aos-duration="1200">
+                  <a href="https://abdul-sipus.000webhostapp.com/" rel="noopener" aria-label="Website nonton kuy" target="_blank">
+                  <picture>
+                  <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./images/project5-small.jpg">
+                  <img src="./images/project5-large.jpg" alt="Website Nonton Kuy"
+                  class="lazyload project-img card-img-top img-fluid">
+              </picture>
+              </a>
+                      <div class="card-body">
+                          <p class="card-title">Sistem Perpustakaan</p>
+                          <p>Usename : jwd</p>
+                          <p>Password : 12345</p>
+                          <a href="https://abdul-sipus.000webhostapp.com/" rel="noopener" aria-label="Website Sistem Perpustakaan" target="_blank" class="go btn btn-danger"><i class="fas fa-external-link-alt"></i> Open
+                              Web</a>
+                              <a href="https://github.com/dulabdul/digital-sipus.git" rel="noopener" aria-label="Website Sistem Perpustakaan" target="_blank" class="go ml-1 btn btn-danger"><i class="fab fa-github" style="font-size:21px;"></i> Open
+                              Github</a>
+                      </div>
+                  </div>
+              </div>
               </div>
           </div>
       </section>
@@ -401,7 +388,7 @@ class kontenBar extends HTMLElement {
                       <hr>
                   </div>
                   <div class="col-md-4 mb-3">
-                      <div class="card-project shadow">
+                      <div class="card-project shadow" data-aos="zoom-in-up" data-aos-delay="100"data-aos-duration="1200">
                       <a href="https://www.dicoding.com/certificates/L4PQM1E92ZO1" rel="noopener" aria-label="Sertifikat" target="_blank">
                       <picture>
                       <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./images/solid-small.jpg">
@@ -416,7 +403,7 @@ class kontenBar extends HTMLElement {
                       </p>
                   </div>
                   <div class="col-md-4 mb-3">
-                      <div class="card-project shadow">
+                      <div class="card-project shadow" data-aos="zoom-in-up" data-aos-delay="150"data-aos-duration="1200">
                       <a href="https://www.dicoding.com/certificates/2VX3NRK0QXYQ" rel="noopener" aria-label="Sertifikat" target="_blank">
                       <picture>
                       <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./images/solid-small.jpg">
@@ -431,7 +418,7 @@ class kontenBar extends HTMLElement {
                       </p>
                   </div>
                   <div class="col-md-4 mb-3">
-                      <div class="card-project shadow">
+                      <div class="card-project shadow" data-aos="zoom-in-up" data-aos-delay="200"data-aos-duration="1200">
                       <a href="https://www.dicoding.com/certificates/GRX5GO3WVX0M" rel="noopener" aria-label="Sertifikat" target="_blank">
                       <picture>
                       <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./images/fundamental-small.jpg">
@@ -446,7 +433,7 @@ class kontenBar extends HTMLElement {
                       </p>
                   </div>
                   <div class="col-md-4 mb-3">
-                      <div class="card-project shadow">
+                      <div class="card-project shadow" data-aos="zoom-in-up" data-aos-delay="250"data-aos-duration="1200">
                       <a href="https://www.dicoding.com/certificates/QLZ98739EX5D" rel="noopener" aria-label="Sertifikat" target="_blank">
                       <picture>
                       <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./images/mpwa-small.jpg">
@@ -462,7 +449,7 @@ class kontenBar extends HTMLElement {
                       </p>
                   </div>
                   <div class="col-md-4 mb-3">
-                      <div class="card-project shadow">
+                      <div class="card-project shadow" data-aos="zoom-in-up" data-aos-delay="300"data-aos-duration="1200">
                       <a href="https://www.dicoding.com/certificates/MEPJLEER6Z3V" rel="noopener" aria-label="Sertifikat" target="_blank">
                       <picture>
                       <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./images/mfwde-small.jpg">
@@ -486,12 +473,12 @@ class kontenBar extends HTMLElement {
                       <h2 class="text-center fs-1 font-weight-bold heading__tagline">Contact Me</h2>
                       <hr>
                   </div>
-                  <div class="col-12 section_head_contact text-start mt-3">
+                  <div class="col-12 section_head_contact text-start mt-5" data-aos-once="true" data-aos="fade-right" data-aos-delay="100"data-aos-duration="1200">
                       <h3><span>Informasi</span> Kontak</h3>
                   </div>
               </div>
               <div class="row section__contact">
-                  <div class="col-md d-flex mt-3">
+                  <div class="col-md d-flex mt-3" data-aos-once="true" data-aos="fade-up-right" data-aos-delay="200"data-aos-duration="1200">
                       <div class="icon-contact">
                           <a href="https://wa.me/+6289675293838" rel="noopener" aria-label="Telephone" target="_blank"><i class="fas fa-phone"
                                   aria-hidden="true"></i></a>
@@ -501,7 +488,7 @@ class kontenBar extends HTMLElement {
                                   <p class="font-weight-light fs-6 text-start">+6289675293838</p>
                       </div>
                   </div>
-                  <div class="col-md d-flex mt-3">
+                  <div class="col-md d-flex mt-3" data-aos-once="true" data-aos="fade-up" data-aos-delay="250"data-aos-duration="1200">
                       <div class="icon-contact">
                           <a href="mailto:dulabdol1331@gmail.com" rel="noopener" aria-label="Telephone" target="_blank"><i class="far fa-envelope"
                                   aria-hidden="true"></i></a>
@@ -511,7 +498,7 @@ class kontenBar extends HTMLElement {
                           <p class="font-weight-light fs-6 text-start">dulabdol331@gmail.com</p>
                       </div>
                   </div>
-                  <div class="col-md d-flex mt-3">
+                  <div class="col-md d-flex mt-3" data-aos-once="true" data-aos="fade-up-left" data-aos-delay="300"data-aos-duration="1200">
                       <div class="icon-contact">
                           <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                       </div>
@@ -524,18 +511,18 @@ class kontenBar extends HTMLElement {
                   </div>
               </div>
               <div class="row">
-                  <div class="col-12 section_head_sosmed text-start">
+                  <div class="col-12 section_head_sosmed text-start" data-aos-once="true" data-aos="fade-right" data-aos-delay="100"data-aos-duration="1200">
                       <h3><span>Informasi</span>Media Sosial</h3>
                   </div>
               </div>
               <div class="pt-30">
                   <div class="col-12 social-media-container mb-5 text-center">
                       <ul class="social-media-link">
-                          <li><a href="https://www.instagram.com/dul.abdul21/" rel="noopener" aria-label="Instragam" target="_blank"><i
+                          <li data-aos-once="true" data-aos="fade-up-right" data-aos-delay="200"data-aos-duration="1200"><a href="https://www.instagram.com/dul.abdul21/" rel="noopener" aria-label="Instragam" target="_blank"><i
                                       class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                          <li><a href="https://www.linkedin.com/in/abdul-rahman-2737131a1/" rel="noopener" aria-label="Linkedin"
+                          <li data-aos-once="true" data-aos="fade-up" data-aos-delay="250"data-aos-duration="1200"><a href="https://www.linkedin.com/in/abdul-rahman-2737131a1/" rel="noopener" aria-label="Linkedin"
                                   target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                          <li><a href="https://github.com/dulabdul" target="_blank" rel="noopener" aria-label="Github"><i
+                          <li data-aos-once="true" data-aos="fade-up-left" data-aos-delay="300"data-aos-duration="1200"><a href="https://github.com/dulabdul" target="_blank" rel="noopener" aria-label="Github"><i
                                       class="fab fa-github" aria-hidden="true"></i></a>
                           </li>
                       </ul>
