@@ -4,6 +4,7 @@ html {
 body{
   position: relative;
 }
+
 .topnav a {
   float: left;
   display: block;
@@ -100,6 +101,7 @@ body{
 }
 section {
   padding-top: 4rem;
+  overflow-x: hidden;
 }
 .section_head_about {
   margin-bottom: 20px;
