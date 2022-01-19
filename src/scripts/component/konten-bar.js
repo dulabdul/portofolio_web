@@ -1,265 +1,12 @@
 /* eslint-disable no-underscore-dangle */
 class kontenBar extends HTMLElement {
-  connectedCallback() {
-    this._render();
-  }
+    connectedCallback() {
+        this._render();
+    }
 
-  _render() {
-    this.innerHTML = /* html */ `
+    _render() {
+        this.innerHTML = /* html */ `
       <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-
-      <section id="home">
-          <div class="container">
-              <div class="jumbotron bg-transparent">
-                  <div class="row justify-content-evenly">
-                      <div class="col-md-6 text-start hero">
-                          <h1 class="hallo display-4 font-weight-bold"></h1>
-                          <span class="display-4 font-weight-bold"></span>
-                          
-                          <h1 class="title-job display-4 font-weight-normal fs-2 mt-4"></h1>
-                      </div>
-                      <div class="col-md-6 mt-4">
-                      <picture>
-                      <source media="(max-width: 600px)" srcset="./images/abdul-small.jpg">
-                      <img  data-aos="flip-up" data-aos-duration="1500"
- src="./images/abdul-large.jpg" alt="Abdulrahman"
-                      class="lazyload profile-img rounded-circle img-thumbnail shadow-sm img-fluid">
-                  </picture>
-                      </div>
-                  </div>
-              </div>
-              <a class="button-sm-call btn btn-outline-danger text-start" href="#contact" role="button"><i
-                      class="fas fa-phone mr-1" style="font-size: 24px;" aria-hidden="true"></i>Contact Me</a>
-              <div class="mt-3 text-dark">
-                  <div class="icon">
-                      <a href="https://www.instagram.com/ar.dev21__/" rel="noopener" aria-label="Instragam" class="active" target="_blank"><i
-                              class="fab fa-instagram" aria-hidden="true"></i></a>
-                      <a href="https://www.linkedin.com/in/abdul-rahman-2737131a1/" rel="noopener" aria-label="Linkedin" target="_blank"><i
-                              class="fab fa-linkedin" aria-hidden="true"></i></a>
-                      <a href="https://github.com/dulabdul" target="_blank" rel="noopener" aria-label="Github"><i class="fab fa-github"
-                              aria-hidden="true"></i></a>
-                      <a href="mailto:dulabdol1331@gmail.com" rel="noopener" aria-label="Email" target="_blank"><i class="fas fa-envelope"
-                              aria-hidden="true"></i></a>
-                  </div>
-              </div>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill="#aa01013a" fill-opacity="1"
-                  d="M0,160L34.3,154.7C68.6,149,137,139,206,144C274.3,149,343,171,411,170.7C480,171,549,149,617,122.7C685.7,96,754,64,823,53.3C891.4,43,960,53,1029,85.3C1097.1,117,1166,171,1234,192C1302.9,213,1371,203,1406,197.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
-              </path>
-          </svg>
-      </section>
-      <section id="about" class="about">
-          <div class="container">
-              <div class="row justify-content-center">
-                  <div class="col-md-12 heading">
-                      <h2 class="text-center mb-3 fs-1 heading__tagline font-weight-bold">About Me</h2>
-                      <hr>
-                  </div>
-                  <div class="col-md-4 about-img mt-4">
-                  <picture>
-                  <source class="lazyload img-fluid img-about mb-4" media="(max-width: 600px)" srcset="./images/abdul_2-small.jpg">
-                  <img data-aos="fade-right" data-aos-delay="50"
-                  data-aos-duration="1200" src="./images/abdul_2-large.jpg" alt="Abdulrahman"
-                  class="lazyload img-fluid img-about mb-4">
-              </picture>
-                  </div>
-                  <div class="col-md-8 heading__name ">
-                      <p data-aos="fade-left" data-aos-delay="150" data-aos-duration="1500" data-aos-once="true" class="text-start fs-5 paragraf-about">Perkenalkan Saya <span class="font-weight-bold">Abdul
-                              Rahman,
-                          </span>saat ini
-                          tinggal di Banten, Kota Serang. Saya seorang
-                          fresh graduate dari SMKN1 Kota Serang jurusan Teknik Komputer dan Jaringan, di SMK saya
-                          mengikuti organisasi Gerakan Disiplin Siswa
-                          dan menjabat sebagai Ketua Umum periode 2019-2020. Saya aktif di kegiatan organisasi seperti
-                          event graduation, porseni, bansos organisasi, dan lainnya.</p>
-                      <p data-aos="fade-left" data-aos-delay="200" data-aos-duration="1500" data-aos-once="true" class="text-start fs-5">
-                          Saya memiliki ketertarikan di bidang Web Developer khususnya Front-End Web Developer, selama
-                          pandemi sekolah saya melaksanakan kegiatan belajar secara daring, tetapi bagi saya sekolah
-                          daring bukan berarti berhenti belajar atau menjadi halangan, saya mencoba untuk improvisasi
-                          skill saya dengan
-                          mengikuti beasiswa dari Dicoding di learning path Front-End Web Developer.
-                      </p>
-                      <p data-aos="fade-left" data-aos-delay="250"data-aos-duration="1500" data-aos-once="true" class="text-start fs-5">
-                          Saya memiliki karakter disiplin, jujur, dan bertanggung jawab.Selain itu, saya bisa
-                          bekerja secara tim
-                          ataupun individu untuk menyelesaikan suatu kerjaan, saya memiliki kenginan kuat untuk
-                          belajar
-                          hal baru dalam hidup saya.
-                      </p>
-                      <a data-aos="fade-left" data-aos-delay="300"data-aos-duration="1500" data-aos-once="true" class="download button-sm-call ml-3 btn btn-danger text-start"
-                          href="https://drive.google.com/file/d/1SgUnerjouMq7G4fcayHyufraeaFpQD8M/view?usp=sharing"
-                          rel="noopener" aria-label="Download" target="_blank" role="button"><i class="fas fa-download"></i> Download
-                          Resume</a>
-                  </div>
-                  <div class="col-md-12 section_head_about">
-                      <h3 class="text-start mt-4 mb-3 fs-2">Keahlian</h3>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="100"data-aos-duration="1200">
-                          <div class="shadow-sm">
-                              <div class="row">
-                                  <div class="col-6 progress-icon">
-                                      <p class="text-start mt-1 ml-4 fs-5 font-weight-bold"><i class="fab fa-html5"
-                                              aria-hidden="true"></i>
-                                          <span class="text-dark ml-2">HTML 5 </span></p>
-                                  </div>
-                                  <div class="col-6">
-                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">Advanced</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="150"data-aos-duration="1200">
-                          <div class="shadow-sm">
-                              <div class="row">
-                                  <div class="col-6 progress-icon">
-                                      <p class="font-weight-bold text-start mt-1 ml-4 fs-5"><i class="fab fa-css3-alt"></i>
-                                          <span class="text-dark ml-2">CSS 3 </span></p>
-                                  </div>
-                                  <div class="col-6">
-                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">Intermediate</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="200"data-aos-duration="1200">
-                          <div class="shadow-sm">
-                              <div class="row">
-                                  <div class="col-6 progress-icon">
-                                      <p class="font-weight-bold text-start mt-1 ml-4 fs-5"><i class="fab fa-js-square"></i>
-                                          <span class="text-dark ml-2">JavaScript </span></p>
-                                  </div>
-                                  <div class="col-6">
-                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">Beginner</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="200"data-aos-duration="1200">
-                          <div class="shadow-sm">
-                              <div class="row">
-                                  <div class="col-6 progress-icon">
-                                      <p class="font-weight-bold text-start mt-1 ml-4 fs-5"><i class="fab fa-node-js"></i>
-                                          <span class="text-dark ml-2">Node.Js </span></p>
-                                  </div>
-                                  <div class="col-6">
-                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">Beginner</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="250"data-aos-duration="1200">
-                          <div class="shadow-sm">
-                              <div class="row">
-                                  <div class="col-6 progress-icon">
-                                      <p class="font-weight-bold text-start mt-1 ml-4 fs-5"><i class="fab fa-bootstrap"></i>
-                                          <span class="text-dark ml-2">Bootstrap </span></p>
-                                  </div>
-                                  <div class="col-6">
-                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">Intermediate</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="300"data-aos-duration="1200">
-                          <div class="shadow-sm">
-                              <div class="row">
-                                  <div class="col-6 progress-icon">
-                                      <p class="font-weight-bold text-start mt-1 ml-4 fs-5"><i class="fas fa-code"></i>
-                                          <span class="text-dark ml-2">Webpack </span></p>
-                                  </div>
-                                  <div class="col-6">
-                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">Intermediate</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="350"data-aos-duration="1200">
-                          <div class="shadow-sm">
-                              <div class="row">
-                                  <div class="col-6 progress-icon">
-                                      <p class="font-weight-bold text-start mt-1 ml-4 fs-5"><i class="fab fa-git-square"
-                                              aria-hidden="true"></i>
-                                          <span class="text-dark ml-2">Git </span></p>
-                                  </div>
-                                  <div class="col-6">
-                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">Intermediate</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="400"data-aos-duration="1200">
-                          <div class="shadow-sm">
-                              <div class="row">
-                                  <div class="col-8 progress-icon">
-                                      <p class="font-weight-bold text-start mt-1 ml-4 fs-5"><i class="fas fa-code"></i>
-                                          <span class="text-dark ml-2">PWA (Progressive Web App) </span></p>
-                                  </div>
-                                  <div class="col-4">
-                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">Intermediate</p>
-                                  </div>
-                              </div>
-
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="card shadow mb-3" data-aos="fade-up" data-aos-delay="450"data-aos-duration="1200">
-                          <div class="shadow-sm">
-                              <div class="row">
-                                  <div class="col-8 progress-icon">
-                                      <p class="font-weight-bold text-start mt-1 ml-4 fs-5"><i class="fas fa-code" aria-hidden="true"></i>
-                                          <span class="text-dark ml-2">Materialize CSS</span></p>
-                                  </div>
-                                  <div class="col-4">
-                                      <p class="text-end mt-3 mr-2 font-weight-bold fs-6">Intermediate</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="container-md">
-              <div class="row align-item-center">
-                  <div class="col-md-12 section_head_about">
-                      <h3 class="text-start mt-4 mb-2 fs-2">Hobi</h3>
-                  </div>
-                  <div data-aos="fade-up-right" data-aos-delay="150"data-aos-duration="1100" class="col-md about-hobi text-center">
-                      <i class="fas fa-hiking"></i>
-                      <p class="mt-3 fs-4">Hiking</p>
-                  </div>
-                  <div data-aos="fade-up" data-aos-delay="200"data-aos-duration="1100" class="col-md about-hobi text-center">
-                      <i class="fas fa-film"></i>
-                      <p class="mt-3 fs-4">Menonton Film/Anime</p>
-                  </div>
-                  <div data-aos="fade-up-left" data-aos-delay="250"data-aos-duration="1100" class="col-md about-hobi text-center">
-                      <i class="fas fa-running"></i>
-                      <p class="mt-3 fs-4">Running</p>
-                  </div>
-              </div>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill="#fff" fill-opacity="1"
-                  d="M0,288L120,282.7C240,277,480,267,720,261.3C960,256,1200,256,1320,256L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
-              </path>
-          </svg>
-      </section>
       <section id="project" class="pb-5">
           <div class="container">
               <div class="row justify-content-center">
@@ -271,8 +18,8 @@ class kontenBar extends HTMLElement {
                       <div class="card card-project shadow" data-aos="fade-up-right" data-aos-delay="100"data-aos-duration="1200">
                       <a href="https://infocorona-e90fb.web.app/" rel="noopener" aria-label="Website Covid" target="_blank">
                       <picture>
-                      <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./images/project1-small.jpg">
-                      <img src="./images/project1-large.jpg" alt="Website Covid"
+                      <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./dist/project1-small.jpg">
+                      <img src="./dist/project1-large.jpg" alt="Website Covid"
                       class="lazyload project-img card-img-top img-fluid">
                   </picture>
                   </a>
@@ -291,8 +38,8 @@ class kontenBar extends HTMLElement {
                       <div class="card card-project shadow" data-aos="fade-up" data-aos-delay="150"data-aos-duration="1200">
                       <a href="https://mysoccer-584dc.web.app/" rel="noopener" aria-label="Website mySoccer" target="_blank">
                       <picture>
-                      <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./images/project2-small.jpg">
-                      <img src="./images/project2-large.jpg" alt="Website mySoccer"
+                      <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./dist/project2-small.jpg">
+                      <img src="./dist/project2-large.jpg" alt="Website mySoccer"
                       class="lazyload project-img card-img-top img-fluid">
                   </picture>
                   </a>
@@ -309,8 +56,8 @@ class kontenBar extends HTMLElement {
                       <div class="card card-project shadow" data-aos="fade-up-left" data-aos-delay="200"data-aos-duration="1200">
                       <a href="https://theresto-fc91d.web.app/" rel="noopener" aria-label="Website The Resto" target="_blank">
                       <picture>
-                      <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./images/project3-small.jpg">
-                      <img src="./images/project3-large.jpg" alt="Website The Resto"
+                      <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./dist/project3-small.jpg">
+                      <img src="./dist/project3-large.jpg" alt="Website The Resto"
                       class="lazyload project-img card-img-top img-fluid">
                   </picture>
                   </a>
@@ -327,8 +74,8 @@ class kontenBar extends HTMLElement {
                       <div class="card card-project shadow" data-aos="fade-up-right" data-aos-delay="250"data-aos-duration="1200">
                       <a href="https://wawastore24.my.id/" rel="noopener" aria-label="Website WawaStore"  target="_blank">
                       <picture>
-                      <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./images/wawastore-small.jpg">
-                      <img src="./images/wawastore-large.jpg" alt="Website Wawastore"
+                      <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./dist/wawastore-small.jpg">
+                      <img src="./dist/wawastore-large.jpg" alt="Website Wawastore"
                       class="lazyload project-img card-img-top img-fluid">
                   </picture>
                   </a>
@@ -343,8 +90,8 @@ class kontenBar extends HTMLElement {
                       <div class="card card-project shadow" data-aos="fade-up-left" data-aos-delay="300"data-aos-duration="1200">
                       <a href="https://nonton-kuy.web.app/" rel="noopener" aria-label="Website nonton kuy" target="_blank">
                       <picture>
-                      <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./images/project4-small.jpg">
-                      <img src="./images/project4-large.jpg" alt="Website Nonton Kuy"
+                      <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./dist/project4-small.jpg">
+                      <img src="./dist/project4-large.jpg" alt="Website Nonton Kuy"
                       class="lazyload project-img card-img-top img-fluid">
                   </picture>
                   </a>
@@ -361,8 +108,8 @@ class kontenBar extends HTMLElement {
                   <div class="card card-project shadow" data-aos="fade-up-left" data-aos-delay="300"data-aos-duration="1200">
                   <a href="https://abdul-sipus.000webhostapp.com/" rel="noopener" aria-label="Website nonton kuy" target="_blank">
                   <picture>
-                  <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./images/project5-small.jpg">
-                  <img src="./images/project5-large.jpg" alt="Website Nonton Kuy"
+                  <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./dist/project5-small.jpg">
+                  <img src="./dist/project5-large.jpg" alt="Website Nonton Kuy"
                   class="lazyload project-img card-img-top img-fluid">
               </picture>
               </a>
@@ -391,8 +138,8 @@ class kontenBar extends HTMLElement {
                       <div class="card-project shadow" data-aos="zoom-in-up" data-aos-delay="100"data-aos-duration="1200">
                       <a href="https://www.dicoding.com/certificates/L4PQM1E92ZO1" rel="noopener" aria-label="Sertifikat" target="_blank">
                       <picture>
-                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./images/solid-small.jpg">
-                      <img src="./images/solid-large.jpg" alt="Sertifikat_Solid"
+                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./dist/solid-small.jpg">
+                      <img src="./dist/solid-large.jpg" alt="Sertifikat_Solid"
                       class="lazyload project-img img-fluid">
                   </picture>
                   </a>
@@ -406,8 +153,8 @@ class kontenBar extends HTMLElement {
                       <div class="card-project shadow" data-aos="zoom-in-up" data-aos-delay="150"data-aos-duration="1200">
                       <a href="https://www.dicoding.com/certificates/2VX3NRK0QXYQ" rel="noopener" aria-label="Sertifikat" target="_blank">
                       <picture>
-                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./images/solid-small.jpg">
-                      <img src="./images/solid-large.jpg" alt="Sertifikat Dasar Web"
+                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./dist/solid-small.jpg">
+                      <img src="./dist/solid-large.jpg" alt="Sertifikat Dasar Web"
                       class="lazyload project-img img-fluid">
                   </picture>
                   </a>
@@ -421,8 +168,8 @@ class kontenBar extends HTMLElement {
                       <div class="card-project shadow" data-aos="zoom-in-up" data-aos-delay="200"data-aos-duration="1200">
                       <a href="https://www.dicoding.com/certificates/GRX5GO3WVX0M" rel="noopener" aria-label="Sertifikat" target="_blank">
                       <picture>
-                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./images/fundamental-small.jpg">
-                      <img src="./images/fundamental-large.jpg" alt="Sertifikat Fundamental Web"
+                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./dist/fundamental-small.jpg">
+                      <img src="./dist/fundamental-large.jpg" alt="Sertifikat Fundamental Web"
                       class="lazyload project-img img-fluid">
                   </picture>
                   </a>
@@ -436,8 +183,8 @@ class kontenBar extends HTMLElement {
                       <div class="card-project shadow" data-aos="zoom-in-up" data-aos-delay="250"data-aos-duration="1200">
                       <a href="https://www.dicoding.com/certificates/QLZ98739EX5D" rel="noopener" aria-label="Sertifikat" target="_blank">
                       <picture>
-                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./images/mpwa-small.jpg">
-                      <img src="./images/mpwa-large.jpg" alt="Sertifikat MPWA"
+                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./dist/mpwa-small.jpg">
+                      <img src="./dist/mpwa-large.jpg" alt="Sertifikat MPWA"
                       class="lazyload project-img img-fluid">
                   </picture>
                   </a>
@@ -452,8 +199,8 @@ class kontenBar extends HTMLElement {
                       <div class="card-project shadow" data-aos="zoom-in-up" data-aos-delay="300"data-aos-duration="1200">
                       <a href="https://www.dicoding.com/certificates/MEPJLEER6Z3V" rel="noopener" aria-label="Sertifikat" target="_blank">
                       <picture>
-                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./images/mfwde-small.jpg">
-                      <img src="./images/mfwde-large.jpg" alt="Sertifikat MFWDE"
+                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./dist/mfwde-small.jpg">
+                      <img src="./dist/mfwde-large.jpg" alt="Sertifikat MFWDE"
                       class="lazyload project-img img-fluid">
                   </picture>
                   </a>
@@ -529,14 +276,9 @@ class kontenBar extends HTMLElement {
                   </div>
               </div>
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill="#aa01013a" fill-opacity="1"
-                  d="M0,96L40,133.3C80,171,160,245,240,229.3C320,213,400,107,480,85.3C560,64,640,128,720,154.7C800,181,880,171,960,144C1040,117,1120,75,1200,74.7C1280,75,1360,117,1400,138.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
-              </path>
-          </svg>
       </section>
   </div>
                     `;
-  }
+    }
 }
 customElements.define('konten-bar', kontenBar);

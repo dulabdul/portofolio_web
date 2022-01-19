@@ -11,24 +11,33 @@ import './scripts/component/navbar';
 import './scripts/component/konten-bar';
 import './scripts/component/footer-bar';
 // gsap
-import { gsap } from 'gsap';
-import { TextPlugin } from 'gsap/TextPlugin';
+import {
+  gsap
+} from 'gsap';
+import {
+  TextPlugin
+} from 'gsap/TextPlugin';
 
 gsap.registerPlugin(TextPlugin);
 
 gsap.to('.hallo', {
   duration: 1.2,
   delay: 1.5,
-  text: 'Hi,Saya',
+  text: "Hi,I'am",
 });
 gsap.to('.hero span', {
-  duration: 1.4,
+  duration: 1.2,
   delay: 3,
-  text: 'Abdul Rahman',
+  text: 'Abdul',
+});
+gsap.to('.hero p', {
+  duration: 1.2,
+  delay: 5,
+  text: 'Rahman',
 });
 gsap.to('.title-job', {
   duration: 1.5,
-  delay: 4.5,
+  delay: 6,
   text: 'Front-End Web Developer',
 });
 /*
@@ -45,3 +54,10 @@ $(document).ready(() => {
     target: '#nav-area',
   });
 });
+
+// Navbar On Scroll
+window.addEventListener("scroll", function () {
+  let nav = document.querySelector('#nav-area');
+  nav.classList.toggle('sticky', window.scrollY > 0);
+})
+// End Navbar On Scroll

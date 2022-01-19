@@ -1,15 +1,16 @@
 /* eslint-disable global-require */
 /* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const ImageminMozjpeg = require('imagemin-mozjpeg');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const {
+  BundleAnalyzerPlugin
+} = require('webpack-bundle-analyzer');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: path.resolve(__dirname, './src/index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -55,11 +56,9 @@ module.exports = {
       // rules gambar
       {
         test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
+        use: [{
+          loader: 'file-loader',
+        }, ],
       },
       // rules svg
       {
@@ -68,8 +67,7 @@ module.exports = {
       },
       {
         test: /\.(scss)$/,
-        use: [
-          {
+        use: [{
             // Adds CSS to the DOM by injecting a `<style>` tag
             loader: 'style-loader',
           },
@@ -97,7 +95,6 @@ module.exports = {
   },
   plugins: [
     new BundleAnalyzerPlugin(),
-    new CleanWebpackPlugin(),
     new ImageminWebpackPlugin({
       plugins: [
         ImageminMozjpeg({
@@ -111,12 +108,13 @@ module.exports = {
       filename: 'index.html',
     }),
     new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: path.resolve(__dirname, 'src/public'),
-          to: path.resolve(__dirname, 'dist/'),
+      patterns: [{
+        from: path.resolve(__dirname, 'src/public'),
+        to: path.resolve(__dirname, 'dist'),
+        globOptions: {
+          ignore: ['**/images/**'], // CopyWebpackPlugin mengabaikan berkas yang berada di dalam folder images
         },
-      ],
+      }, ],
     }),
   ],
 };

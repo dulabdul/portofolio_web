@@ -1,112 +1,145 @@
+/* color 1 00CC8F */
 html {
   scroll-behavior: smooth;
 }
-body{
+
+body {
   position: relative;
+}
+
+header {
+  background-image: radial-gradient(circle, #414454, #323647, #393D4D);
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: black;
+  color: #fff !important;
   padding: 8px 12px;
   text-decoration: none;
   font-size: 17px;
   border-bottom: 3px solid transparent;
   transition: all 0.2s ease-in-out;
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
-  background-color: #af0404 !important;
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: #00CC8F !important;
   color: #fff !important;
   font-weight: 600;
   padding: 6px;
 }
-.navbar-light .navbar-nav .nav-link{
-  color: #000;
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
 }
+
 .topnav a:hover {
-  color: #000;
-  border-bottom: 3px solid #af0404;
+  color: #00CC8F !important;
+  border-bottom: 2px solid #00CC8F;
 }
 
 .topnav a.active {
-  border-bottom: 3px solid #af0404;
+  border-bottom: 3px solid #fff;
 }
+
 /* akhir navigasi */
 /* ini CSS untuk Header */
 .jumbotron {
   padding: 6rem;
 }
+
 .icon a {
   padding-left: 30px;
   font-size: 30px;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   float: left;
   display: block;
   padding: 8px 12px;
   border-bottom: 3px solid transparent;
   transition: all 0.3s ease-in-out;
 }
+
 .icon a:hover {
-  color: #af0404;
-  border-bottom: 3px solid #af0404;
+  color: #00CC8F;
+  border-bottom: 3px solid #00CC8F;
 }
+
 .icon a.active {
-  border-bottom: 3px solid #af0404;
+  border-bottom: 3px solid #00CC8F;
 }
+
 .hero span {
-  color: #af0404;
+  color: #fff;
 }
+
+.hero p {
+  color: #00CC8F;
+  display: inline;
+}
+
 /* ini akhir CSS Header */
 /* about */
 .skills-bar {
   position: relative;
 }
+
 .about {
   background-color: #aa01013a;
 }
+
 .about-hobi p {
   font-size: 24px;
   font-weight: 600;
-  color: #af0404;
+  color: #00CC8F;
 }
+
 .progress-icon {
-  color: #af0404;
+  color: #00CC8F;
 }
+
 .progress-icon i {
   font-size: 32px;
 }
+
 .heading__tagline {
-  color: #af0404;
+  color: #00CC8F;
 }
+
 .img-about {
   border-radius: 8px;
 }
-.heading hr{
+
+.heading hr {
   box-sizing: border-box;
   overflow: visible;
   margin: auto;
   width: 60px;
   height: 3px;
-  background-color: #af0404;
+  background-color: #00CC8F;
 }
+
 .paragraf-about::first-letter {
   font-size: 60px;
   line-height: 60px;
-  color: #af0404;
+  color: #00CC8F;
 }
+
 .heading__name span {
-  color: #af0404;
+  color: #00CC8F;
 }
+
 section {
-  padding-top: 4rem;
+  padding: 3rem;
   overflow-x: hidden;
 }
+
 .section_head_about {
   margin-bottom: 20px;
   position: relative;
 }
+
 .section_head_about h3 {
   position: relative;
   padding: 10px 0 15px 10px;
@@ -116,9 +149,11 @@ section {
   font-weight: 600;
   margin-bottom: 0;
 }
+
 .section_head_about h3:before {
-  background: #af0404;
+  background: #00CC8F;
 }
+
 .section_head_about h3:before {
   content: '';
   width: 4px;
@@ -127,16 +162,19 @@ section {
   left: -1px;
   bottom: 0;
 }
+
 /* akhir About */
 /*contact */
 .icon-contact i {
   font-size: 45px;
-  color: #af0404;
+  color: #00CC8F;
 }
+
 .section_head_contact {
   margin-bottom: 35px;
   position: relative;
 }
+
 .section_head_contact h3 {
   position: relative;
   padding: 0 0 0 15px;
@@ -147,14 +185,17 @@ section {
   font-weight: 600;
   margin-bottom: 0;
 }
+
 .section_head_contact h3 span {
   font-weight: 300;
   display: block;
   padding-bottom: 35px;
 }
+
 .section_head_contact h3:before {
-  background: #af0404;
+  background: #00CC8F;
 }
+
 .section_head_contact h3:before {
   content: '';
   width: 1px;
@@ -163,11 +204,13 @@ section {
   left: -1px;
   bottom: 0;
 }
+
 .section_head_sosmed {
   padding-top: 40px;
   margin-bottom: 60px;
   position: relative;
 }
+
 .section_head_sosmed h3 {
   position: relative;
   padding: 0 0 0 15px;
@@ -178,19 +221,23 @@ section {
   font-weight: 600;
   margin-bottom: 0;
 }
-.section__contact p{
+
+.section__contact p {
   font-size: 1.25rem;
   line-height: 1.25;
   margin-bottom: .5rem;
 }
+
 .section_head_sosmed h3 span {
   font-weight: 300;
   display: block;
   padding-bottom: 35px;
 }
+
 .section_head_sosmed h3::before {
-  background: #af0404;
+  background: #00CC8F;
 }
+
 .section_head_sosmed h3::before {
   content: '';
   width: 1px;
@@ -199,21 +246,25 @@ section {
   left: -1px;
   bottom: 0;
 }
+
 .icon-contact a:hover {
   padding-bottom: 10px;
   border-bottom: 3px solid #000;
 }
+
 .social-media-container {
   background-color: #f7f9fc;
   padding: 30px 20px;
   position: relative;
 }
+
 .social-media-container ul {
   display: inline-block;
   margin-bottom: 0;
 }
+
 .social-media-container a {
-  color: #af0404;
+  color: #00CC8F;
   font-size: 16px;
   width: 60px;
   height: 60px;
@@ -225,33 +276,40 @@ section {
   box-shadow: 2px 2px 20px rgb(0 0 0 / 15%);
   transition: all 0.2s ease-in-out;
 }
+
 .social-media-container a:hover {
   color: #000;
   padding-bottom: 10px;
-  border-bottom: 3px solid #af0404;
+  border-bottom: 3px solid #00CC8F;
   transform: scale(1.1);
 }
+
 .social-media-link i {
   font-size: 38px;
   margin-top: 10px;
 }
+
 .social-media-link a {
   text-decoration: none;
   display: inline-block;
   margin-bottom: 5px;
 }
+
 .social-media-link li {
   display: inline-block;
   margin-bottom: 5px;
   list-style: none;
 }
+
 .social-media-container::before {
-  border-color: #af0404 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #af0404;
+  border-color: #00CC8F rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #00CC8F;
 }
+
 .social-media-container::before {
   left: 0;
   top: 0;
 }
+
 .social-media-container::after,
 .social-media-container::before {
   border-style: solid;
@@ -262,9 +320,11 @@ section {
   position: absolute;
   width: 50px;
 }
+
 .social-media-container::after {
-  border-color: rgba(0, 0, 0, 0) #af0404 #af0404 rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0) #00CC8F #00CC8F rgba(0, 0, 0, 0);
 }
+
 .social-media-container::after {
   bottom: 0;
   right: 0;
@@ -273,116 +333,156 @@ section {
 /* akhir contact*/
 /*img profile*/
 .profile-img {
-  width: 270px;
-  transition: transform 0.2s; /* Animation */
+  width: 400px;
+  margin-left: 50px;
+  transition: transform 0.2s;
 }
+
 .profile-img:hover {
   transform: scale(1.1);
 }
+
 .go {
   min-width: 44px;
   min-height: 44px;
 }
+
 .nav-name a {
-  color: #af0404 !important;
+  color: #fff !important;
   font-weight: 600;
 }
+
+.nav-name a span {
+  color: #00CC8F;
+}
+
 .hamburger,
 .button-call {
   min-width: 44px;
   min-height: 44px;
 }
+
 /* img project */
 .project-img {
   transition: transform 0.2s;
 }
+
 .project-img:hover {
   transform: scale(1.1);
 }
-.card-title{
+
+.card-title {
   font-weight: 600;
   font-size: 18px;
 }
+
 /*responsive CSS */
 @media screen and (max-width: 480px) {
-  .ml-1, .mx-1{
+
+  .ml-1,
+  .mx-1 {
     margin-top: 8px !important;
     margin-left: 0 !important;
   }
+
+  .profile-img {
+    margin: auto;
+  }
+
   .card-project {
     width: 85%;
     margin: auto;
   }
-  .card-title{
+
+  .card-title {
     font-weight: 600;
     font-size: 22px;
   }
+
   .about-hobi i {
     font-size: 75px;
   }
+
   .about-img img {
     width: 65%;
     margin: auto;
     display: block;
   }
+
   .jumbotron {
     padding: 1rem;
   }
-  .profile-img {
-    width: 200px;
-  }
-  a.download.button-sm-call.ml-3.btn.btn-outline-danger.text-start{
+
+  a.download.button-sm-call.ml-3.btn.btn-outline-danger.text-start {
     color: #000 !important;
   }
-  a.download.button-sm-call.ml-3.btn.btn-outline-danger.text-start:hover{
+
+  a.download.button-sm-call.ml-3.btn.btn-outline-danger.text-start:hover {
     color: #fff;
   }
 }
+
 @media screen and (max-width: 900px) and (min-width: 480px) {
   .card-project {
     width: 95%;
     margin: auto;
   }
+
   .about-hobi i {
     font-size: 110px;
   }
+
   .about-img img {
     width: 70%;
     margin: auto;
     display: block;
   }
+
   .jumbotron {
     padding: 3rem;
   }
 }
+
 /* CSS Footer */
 .footer {
   background-color: #aa01013a;
   display: block;
 }
+
 .footer p {
   font-weight: 600;
   font-size: 18px;
 }
+
 .about-hobi i {
   font-size: 140px;
 }
+
 /* Akhir Css Footer */
 /* Font */
 .fs-4 {
   font-size: calc(1.275rem + 0.3vw) !important;
 }
+
 .fs-2 {
   font-size: calc(1.325rem + 0.9vw) !important;
 }
+
 .fs-5 {
   font-size: 1.25rem !important;
 }
+
 h5 {
   font-weight: 600 !important;
 }
-@media (min-width:1200px){
-  .container, .container-sm, .container-md, .container-lg, .container-xl{
+
+@media (min-width:1200px) {
+
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
     max-width: 1200px !important;
   }
 }
