@@ -11,19 +11,15 @@ import './scripts/component/navbar';
 import './scripts/component/konten-bar';
 import './scripts/component/footer-bar';
 // gsap
-import {
-  gsap
-} from 'gsap';
-import {
-  TextPlugin
-} from 'gsap/TextPlugin';
+import { gsap } from 'gsap';
+import { TextPlugin } from 'gsap/TextPlugin';
 
 gsap.registerPlugin(TextPlugin);
 
 gsap.to('.hallo', {
   duration: 1.2,
   delay: 1.5,
-  text: "Hi,I'am",
+  text: 'Hi,Iam',
 });
 gsap.to('.hero span', {
   duration: 1.2,
@@ -56,8 +52,8 @@ $(document).ready(() => {
 });
 
 // Navbar On Scroll
-window.addEventListener("scroll", function () {
-  let nav = document.querySelector('#nav-area');
-  nav.classList.toggle('sticky', window.scrollY > 0);
-})
+// window.addEventListener('scroll', scroll, function () {
+//   let nav = document.querySelector('#nav-area');
+//   nav.classList.toggle('sticky', window.scrollY > 0);
+// })
 // End Navbar On Scroll
