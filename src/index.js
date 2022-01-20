@@ -11,8 +11,12 @@ import './scripts/component/navbar';
 import './scripts/component/konten-bar';
 import './scripts/component/footer-bar';
 // gsap
-import { gsap } from 'gsap';
-import { TextPlugin } from 'gsap/TextPlugin';
+import {
+  gsap
+} from 'gsap';
+import {
+  TextPlugin
+} from 'gsap/TextPlugin';
 
 gsap.registerPlugin(TextPlugin);
 
@@ -21,20 +25,25 @@ gsap.to('.hallo', {
   delay: 1.5,
   text: 'Hi,Iam',
 });
-gsap.to('.hero span', {
-  duration: 1.2,
+gsap.to('.first-name', {
+  duration: 1,
   delay: 3,
   text: 'Abdul',
 });
-gsap.to('.hero p', {
-  duration: 1.2,
-  delay: 5,
+gsap.to('.last-name', {
+  duration: 1,
+  delay: 4,
   text: 'Rahman',
 });
 gsap.to('.title-job', {
   duration: 1.5,
-  delay: 6,
+  delay: 5.2,
   text: 'Front-End Web Developer',
+});
+gsap.to('.title-info', {
+  duration: 3.5,
+  delay: 6.5,
+  text: 'Turning your idea into a cool produk with a good web developer. Iam here to help your to turning idea to amazing product'
 });
 /*
 gsap.from('.display-4', {
@@ -50,7 +59,6 @@ $(document).ready(() => {
     target: '#nav-area',
   });
 });
-
 // Navbar On Scroll
 // window.addEventListener('scroll', scroll, function () {
 //   let nav = document.querySelector('#nav-area');

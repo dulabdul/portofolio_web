@@ -70,18 +70,10 @@ header {
   border-bottom: 3px solid #00CC8F;
 }
 
-.hero span {
-  color: #fff;
-}
-
-.hero p {
-  color: #00CC8F;
-  display: inline;
-}
 
 /* ini akhir CSS Header */
 /* about */
-.skills-bar {
+/* .skills-bar {
   position: relative;
 }
 
@@ -130,10 +122,7 @@ header {
   color: #00CC8F;
 }
 
-section {
-  padding: 3rem;
-  overflow-x: hidden;
-}
+
 
 .section_head_about {
   margin-bottom: 20px;
@@ -161,9 +150,108 @@ section {
   position: absolute;
   left: -1px;
   bottom: 0;
+} */
+
+/* home */
+.support {
+  margin-bottom: 70px;
 }
 
-/* akhir About */
+.home {
+  overflow-x: hidden;
+}
+
+#project,
+#sertifikat,
+#contact {
+  padding: 2rem;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+.btn-outline-success {
+  color: #00CC8F !important;
+  border-color: #00CC8F !important;
+}
+
+.btn-outline-success:hover {
+  background-color: #00CC8F !important;
+  border-color: #00CC8F !important;
+  color: #fff !important;
+}
+
+.btn-success {
+  background-color: #00CC8F !important;
+  border-color: #00CC8F !important;
+}
+
+.first-name {
+  color: #fff;
+}
+
+.last-name {
+  color: #00CC8F;
+  display: inline;
+}
+
+.first-name,
+.last-name {
+  font-size: 2.5rem;
+}
+
+.title-info {
+  color: #b5bdd6;
+  margin-top: 35px;
+}
+
+/* akhir Home */
+/* skills */
+#skills,
+#project {
+  background-color: #282B38;
+}
+
+.bg-skills {
+  background-color: #383b4e;
+  border-radius: 10px;
+}
+
+.img-icons img {
+  width: 150px;
+  height: auto;
+}
+
+.img-svg-html {
+  filter: invert(47%) sepia(66%) saturate(3311%) hue-rotate(348deg) brightness(103%) contrast(89%);
+}
+
+.img-svg-css {
+  filter: invert(71%) sepia(52%) saturate(4188%) hue-rotate(166deg) brightness(92%) contrast(90%);
+}
+
+.img-svg-js {
+  filter: invert(91%) sepia(53%) saturate(7328%) hue-rotate(324deg) brightness(102%) contrast(102%);
+}
+
+.img-svg-php {
+  filter: invert(78%) sepia(63%) saturate(3480%) hue-rotate(198deg) brightness(75%) contrast(78%);
+}
+
+.img-svg-bts {
+  filter: invert(36%) sepia(68%) saturate(752%) hue-rotate(226deg) brightness(83%) contrast(82%);
+}
+
+.img-svg-git {
+  filter: invert(50%) sepia(89%) saturate(4089%) hue-rotate(343deg) brightness(96%) contrast(95%);
+}
+
+.img-svg-vscode {
+  filter: invert(57%) sepia(62%) saturate(1111%) hue-rotate(176deg) brightness(87%) contrast(90%);
+}
+
+/* akhir Skills */
 /*contact */
 .icon-contact i {
   font-size: 45px;
@@ -345,6 +433,8 @@ section {
 .go {
   min-width: 44px;
   min-height: 44px;
+  justify-content: center;
+  margin: 5px;
 }
 
 .nav-name a {
@@ -376,8 +466,86 @@ section {
   font-size: 18px;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: unset;
+  top: unset !important;
+  bottom: 50% !important;
+  opacity: unset !important;
+}
+
+.img-carousel img {
+  width: 400px;
+  margin: auto;
+}
+
+.carousel-indicators {
+  position: unset;
+  margin-top: 10px;
+}
+
+.title-project {
+  color: #00CC8F;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+.project {
+  background-color: #282B38;
+}
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  transition: opacity .6s ease;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  padding: 14px;
+}
+
+.carousel-control-prev-icon {
+  margin-left: -10px;
+}
+
+.carousel-control-next-icon {
+  margin-left: -25px;
+}
+
+
+.carousel-indicators .active {
+  background-color: #fff;
+  opacity: 1;
+}
+
 /*responsive CSS */
 @media screen and (max-width: 480px) {
+  .img-icons img {
+    margin-left: 20px;
+    width: 120px;
+  }
+
+  #project,
+  #sertifikat,
+  #contact {
+    padding: 0;
+  }
 
   .ml-1,
   .mx-1 {
@@ -410,7 +578,8 @@ section {
   }
 
   .jumbotron {
-    padding: 1rem;
+    padding: 2rem;
+    margin-top: 40px;
   }
 
   a.download.button-sm-call.ml-3.btn.btn-outline-danger.text-start {
@@ -423,6 +592,10 @@ section {
 }
 
 @media screen and (max-width: 900px) and (min-width: 480px) {
+  .img-icons img {
+    margin-left: 35px;
+  }
+
   .card-project {
     width: 95%;
     margin: auto;
@@ -484,5 +657,14 @@ h5 {
   .container-lg,
   .container-xl {
     max-width: 1200px !important;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+
+  .img-icons img {
+    margin-left: 22px;
+    width: 100px;
   }
 }

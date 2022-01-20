@@ -7,125 +7,167 @@ class kontenBar extends HTMLElement {
     _render() {
         this.innerHTML = /* html */ `
       <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-      <section id="project" class="pb-5">
-          <div class="container">
-              <div class="row justify-content-center">
-                  <div class="col-12 heading mb-4">
-                      <h2 class="text-center mb-3 fs-1 font-weight-bold heading__tagline">Project</h2>
-                      <hr>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                      <div class="card card-project shadow" data-aos="fade-up-right" data-aos-delay="100"data-aos-duration="1200">
-                      <a href="https://infocorona-e90fb.web.app/" rel="noopener" aria-label="Website Covid" target="_blank">
-                      <picture>
-                      <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./dist/project1-small.jpg">
-                      <img src="./dist/project1-large.jpg" alt="Website Covid"
-                      class="lazyload project-img card-img-top img-fluid">
-                  </picture>
-                  </a>
-                          <div class="card-body">
-                              <p class="card-title">Live Report Covid-19</p>
-                              
-                              <a href="https://infocorona-e90fb.web.app/" rel="noopener" aria-label="Website Covid" target="_blank"
-                                  class="go btn btn-danger"><i class="fas fa-external-link-alt"></i> Open
-                                  Web</a>
-                                  <a href="https://github.com/dulabdul/Web_Corona_Info.git" rel="noopener" aria-label="Github_covid" target="_blank" class="go ml-1 btn btn-danger"><i class="fab fa-github" style="font-size:21px;"></i> Open
-                                  Github</a>
+      <section id="skills">
+      <div class="tagline-skills mt-3">
+          <h2 class="text-white text-center">What Skill & Tools</h2>
+          <h2 class="text-white text-center">I Have for You</h2>
+      </div>
+      <div class="container">
+          <div class="row justify-content-center ">
+              <div class="col">
+                  <div class="card bg-skills">
+                      <div class="card-body ">
+                          <div class="col img-icons">
+                              <img src="../src/public/icons/html.svg" class="lazyload img-fluid img-svg-html"
+                                  alt="HTML Icons">
+                              <img src="../src/public/icons/css3.svg" class="lazyload img-fluid img-svg-css"
+                                  alt="CSS Icons">
+                              <img src="../src/public/icons/javascript.svg" class="lazyload img-fluid img-svg-js"
+                                  alt="Javascript Icons">
+                              <img src="../src/public/icons/php.svg" class="lazyload img-fluid img-svg-php"
+                                  alt="PHP Icons">
+                              <img src="../src/public/icons/bootstrap.svg" class="lazyload img-fluid img-svg-bts"
+                                  alt="Bootstrap Icons">
+                              <img src="../src/public/icons/git.svg" class="lazyload img-fluid img-svg-git"
+                                  alt="GIT Icons">
+                              <img src="../src/public/icons/vscode.svg" class="lazyload img-fluid img-svg-vscode"
+                                  alt="Visual Studio Code Icons">
+                                  <img src="../src/public/icons/webpack.png" class="lazyload img-fluid"
+                                  alt="Webpack Icons">
+                              <img src="../src/public/icons/nodejs.png" class="lazyload img-fluid" alt="NodeJs Icons">
+                              <img src="../src/public/icons/pwa1.png" class="lazyload img-fluid"
+                                  alt="Progressive Web Apps Icons">
+                              <img src="../src/public/icons/wordpress.png" class="lazyload img-fluid"
+                                  alt="Wordpress Icons">
+                              <img src="../src/public/icons/adobe-xd.png" class="lazyload img-fluid"
+                                  alt="Adobe Xd Icons">
                           </div>
+
+
                       </div>
                   </div>
-                  <div class="col-md-4 mb-3">
-                      <div class="card card-project shadow" data-aos="fade-up" data-aos-delay="150"data-aos-duration="1200">
-                      <a href="https://mysoccer-584dc.web.app/" rel="noopener" aria-label="Website mySoccer" target="_blank">
-                      <picture>
-                      <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./dist/project2-small.jpg">
-                      <img src="./dist/project2-large.jpg" alt="Website mySoccer"
-                      class="lazyload project-img card-img-top img-fluid">
-                  </picture>
-                  </a>
-                          <div class="card-body">
-                              <p class="card-title">SoccerBall</p>
-                              <a href="https://mysoccer-584dc.web.app/" rel="noopener" aria-label="Website mySoccer" target="_blank" class="go btn btn-danger"><i class="fas fa-external-link-alt"></i> Open
-                                  Web</a>
-                                  <a href="https://github.com/dulabdul/PWA-Dicoding-MySoccer.git" rel="noopener" aria-label="Website mySoccer" target="_blank" class="go ml-1 btn btn-danger"><i class="fab fa-github" style="font-size:21px;"></i> Open
-                                    Github</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                      <div class="card card-project shadow" data-aos="fade-up-left" data-aos-delay="200"data-aos-duration="1200">
-                      <a href="https://theresto-fc91d.web.app/" rel="noopener" aria-label="Website The Resto" target="_blank">
-                      <picture>
-                      <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./dist/project3-small.jpg">
-                      <img src="./dist/project3-large.jpg" alt="Website The Resto"
-                      class="lazyload project-img card-img-top img-fluid">
-                  </picture>
-                  </a>
-                          <div class="card-body">
-                              <p class="card-title">The Resto</p>
-                              <a href="https://theresto-fc91d.web.app/" rel="noopener" aria-label="Website The Resto"  target="_blank" class="go btn btn-danger"><i class="fas fa-external-link-alt"></i> Open
-                                  Web</a>
-                                  <a href="https://github.com/dulabdul/The-Resto.git" rel="noopener" aria-label="Website The Resto"  target="_blank" class="go ml-1 btn btn-danger"><i class="fab fa-github" style="font-size:21px;"></i> Open
-                                  Github</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                      <div class="card card-project shadow" data-aos="fade-up-right" data-aos-delay="250"data-aos-duration="1200">
-                      <a href="https://wawastore24.my.id/" rel="noopener" aria-label="Website WawaStore"  target="_blank">
-                      <picture>
-                      <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./dist/wawastore-small.jpg">
-                      <img src="./dist/wawastore-large.jpg" alt="Website Wawastore"
-                      class="lazyload project-img card-img-top img-fluid">
-                  </picture>
-                  </a>
-                          <div class="card-body">
-                              <p class="card-title">Toko Online WawaStore</p>
-                              <a href="https://wawastore24.my.id/" rel="noopener" aria-label="Website WawaStore" target="_blank" class="go btn btn-danger"><i class="fas fa-external-link-alt"></i> Open
-                                  Web</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                      <div class="card card-project shadow" data-aos="fade-up-left" data-aos-delay="300"data-aos-duration="1200">
-                      <a href="https://nonton-kuy.web.app/" rel="noopener" aria-label="Website nonton kuy" target="_blank">
-                      <picture>
-                      <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./dist/project4-small.jpg">
-                      <img src="./dist/project4-large.jpg" alt="Website Nonton Kuy"
-                      class="lazyload project-img card-img-top img-fluid">
-                  </picture>
-                  </a>
-                          <div class="card-body">
-                              <p class="card-title">Nonton Kuy</p>
-                              <a href="https://nonton-kuy.web.app/" rel="noopener" aria-label="Website nonton kuy" target="_blank" class="go btn btn-danger"><i class="fas fa-external-link-alt"></i> Open
-                                  Web</a>
-                                  <a href="https://github.com/dulabdul/movie-katalog.git" rel="noopener" aria-label="Website nonton kuy" target="_blank" class="go ml-1 btn btn-danger"><i class="fab fa-github" style="font-size:21px;"></i> Open
-                                  Github</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                  <div class="card card-project shadow" data-aos="fade-up-left" data-aos-delay="300"data-aos-duration="1200">
-                  <a href="https://abdul-sipus.000webhostapp.com/" rel="noopener" aria-label="Website nonton kuy" target="_blank">
-                  <picture>
-                  <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./dist/project5-small.jpg">
-                  <img src="./dist/project5-large.jpg" alt="Website Nonton Kuy"
-                  class="lazyload project-img card-img-top img-fluid">
-              </picture>
-              </a>
-                      <div class="card-body">
-                          <p class="card-title">Sistem Perpustakaan</p>
-                          <p>Usename : jwd</p>
-                          <p>Password : 12345</p>
-                          <a href="https://abdul-sipus.000webhostapp.com/" rel="noopener" aria-label="Website Sistem Perpustakaan" target="_blank" class="go btn btn-danger"><i class="fas fa-external-link-alt"></i> Open
-                              Web</a>
-                              <a href="https://github.com/dulabdul/digital-sipus.git" rel="noopener" aria-label="Website Sistem Perpustakaan" target="_blank" class="go ml-1 btn btn-danger"><i class="fab fa-github" style="font-size:21px;"></i> Open
-                              Github</a>
-                      </div>
-                  </div>
-              </div>
               </div>
           </div>
+      </div>
+  </section>
+      <section id="project" class="pb-5">
+      <div class="container">
+          <div class="col-12 heading mb-2">
+            <h2 class="text-center fs-1 font-weight-bold text-white heading__tagline">Check Out</h2>
+            <h2 class="text-center mb-3 fs-2 font-weight-bold text-white heading__tagline">My Recent Project</h2>
+        </div>
+    <div id="carouselExampleDark" class="carousel slide carousel-dark slide" data-bs-ride="carousel">
+      <div class="row align-items-center">
+        
+        <!-- Button Prev -->
+        <div class="col-1 text-center">
+          <button class="project border-0" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+        <!-- End Of Button Prev -->
+          
+        <!-- Project Items -->
+        <div class="col-10">
+          <div class="carousel-inner">
+            
+            <!-- Project 1 -->
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="card bg-skills border-0">
+                <div class="row align-items-center p-3">
+                  <div class="col-md-6">
+                    <p class="title-project fw-bold fs-4 pt-4 ps-4 poppins">Live Report Covid-19</p><br>
+                    <p class="text-white fs-6 ps-4 pe-5">Website yang menampilkan statistik <br>
+                      Front end : HTML | CSS | Javascript | Bootstrap <br>
+                      Back end : Native PHP | Mysql</p>
+                      <a href="https://infocorona-e90fb.web.app/" rel="noopener" aria-label="Website Covid" target="_blank"
+                        class="go btn btn-success"><i class="fas fa-external-link-alt" style="font-size: 24px;"></i> Demo</a>
+                        <a href="https://github.com/dulabdul/Web_Corona_Info.git" rel="noopener" aria-label="Github_covid" target="_blank" class="go ml-1 btn btn-success"><i class="fab fa-github" style="font-size:24px;"></i> Github</a>
+                  </div>
+                  <div class="col-md-6 p-3 pe-5">
+                  <a href="https://infocorona-e90fb.web.app/" rel="noopener" aria-label="Website Covid" target="_blank">
+                    <picture>
+                    <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./dist/project1-small.jpg">
+                    <img src="./dist/project1-large.jpg" alt="Website Covid"
+                    class="lazyload project-img card-img-top img-fluid">
+                </picture>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Of Project 1 -->
+
+            <!-- Project 2 -->
+            <div class="carousel-item active">
+            <div class="card bg-skills border-0">
+            <div class="row align-items-center p-3">
+              <div class="col-md-6">
+                <p class="title-project fw-bold fs-4 pt-4 ps-4 poppins">Sistem Informasi Administrasi</p><br>
+                <p class="text-white fs-6 ps-4 pe-5">Project magang di dinas pendidikan, membuat sistem informasi untuk pencatatan surat masuk dan keluar. <br>
+                  Front end : HTML | CSS | Javascript | Bootstrap <br>
+                  Back end : Native PHP | Mysql</p>
+                  <a href="https://infocorona-e90fb.web.app/" rel="noopener" aria-label="Website Covid" target="_blank"
+                  class="go btn btn-success"><i class="fas fa-external-link-alt" style="font-size: 24px;"></i> Demo</a>
+                  <a href="https://github.com/dulabdul/Web_Corona_Info.git" rel="noopener" aria-label="Github_covid" target="_blank" class="go ml-1 btn btn-success"><i class="fab fa-github" style="font-size:24px;"></i>
+                  Github</a>
+              </div>
+              <div class="col-md-6 p-3 pe-5">
+                <a href="https://suratdispendik.000webhostapp.com">
+                  <img src="./dist/solid-large.jpg" class="card-img-top shadow" alt="...">
+                </a>
+              </div>
+            </div>
+          </div>
+            </div>
+            <!-- End Of Project 2 -->
+
+            <!-- Project 3 -->
+            <div class="carousel-item">
+            <div class="card bg-skills border-0">
+            <div class="row align-items-center p-3">
+              <div class="col-md-6">
+                <p class="title-project fw-bold fs-4 pt-4 ps-4 poppins">Sistem Informasi Administrasi</p><br>
+                <p class="text-white fs-6 ps-4 pe-5">Project magang di dinas pendidikan, membuat sistem informasi untuk pencatatan surat masuk dan keluar. <br>
+                  Front end : HTML | CSS | Javascript | Bootstrap <br>
+                  Back end : Native PHP | Mysql</p>
+                  <a href="https://infocorona-e90fb.web.app/" rel="noopener" aria-label="Website Covid" target="_blank"
+                  class="go btn btn-success"><i class="fas fa-external-link-alt" style="font-size: 24px;"></i> Demo</a>
+                  <a href="https://github.com/dulabdul/Web_Corona_Info.git" rel="noopener" aria-label="Github_covid" target="_blank" class="go ml-1 btn btn-success"><i class="fab fa-github" style="font-size:24px;"></i> Github</a>
+              </div>
+              <div class="col-md-6 p-3 pe-5">
+                <a href="https://suratdispendik.000webhostapp.com">
+                  <img src="./dist/solid-large.jpg" class="card-img-top shadow" alt="...">
+                </a>
+              </div>
+            </div>
+          </div>
+            </div>
+            <!-- End Of Project 3 -->
+
+          </div>
+        </div>
+        <!-- End Of Project Items -->
+          
+        <!-- Button Next -->
+        <div class="col-1 text-center">
+          <button class="project border-0" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+        <!-- End Of Button Next -->
+
+      </div>
+
+      <!-- Carousel Indicator -->
+      <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    </div>
+    </div>
       </section>
       <section id="sertifikat">
           <div class="container">
@@ -154,7 +196,7 @@ class kontenBar extends HTMLElement {
                       <a href="https://www.dicoding.com/certificates/2VX3NRK0QXYQ" rel="noopener" aria-label="Sertifikat" target="_blank">
                       <picture>
                       <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./dist/solid-small.jpg">
-                      <img src="./dist/solid-large.jpg" alt="Sertifikat Dasar Web"
+                      <img src="./dist/web-large.jpg" alt="Sertifikat Dasar Web"
                       class="lazyload project-img img-fluid">
                   </picture>
                   </a>
@@ -281,4 +323,4 @@ class kontenBar extends HTMLElement {
                     `;
     }
 }
-customElements.define('konten-bar', kontenBar);
+customElements.define("konten-bar", kontenBar);

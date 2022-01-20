@@ -38,15 +38,16 @@ class navBar extends HTMLElement {
             </div>
         </div>
     </nav>
-    <section id="home">
-    <div class="container">
+    <div class="container home">
         <div class="jumbotron bg-transparent">
             <div class="row justify-content-evenly">
-                <div class="col-md-6 text-start hero">
+                <div class="col-md-6 text-start">
                     <h1 class="hallo text-white display-4 font-weight-bold"></h1>
-                    <span class="display-4 font-weight-bold"></span>
-                    <p class="display-4 name font-weight-bold"></p>
-                    <h1 class="title-job text-white display-4 font-weight-normal fs-2 mt-4"></h1>
+                    <span class="display-5 first-name font-weight-bold"></span>
+                    <p class="display-5 last-name font-weight-bold"></p>
+                    <h1 class="title-job text-white display-4 font-weight-normal fs-2 mt-2"></h1>
+                    <p class="title-info text-capitalize fs-3">
+                    </p>
                 </div>
                 <div class="col-md-6 mt-4">
                 <img  data-aos="flip-up" data-aos-duration="1500"
@@ -55,8 +56,13 @@ src="../src/public/images/coding1.png" alt="Abdulrahman"
                 </div>
             </div>
         </div>
-        <a class="button-sm-call btn btn-outline-success text-start" href="#contact" role="button"><i
+        <div class="support">
+        <div class="button-icons">
+            <a class="btn-icons button-sm-call btn btn-outline-success text-start" href="#contact" role="button"><i
                 class="fas fa-phone mr-1" style="font-size: 24px;" aria-hidden="true"></i>Contact Me</a>
+            <a class="button-sm-call btn btn-success text-start" href="#contact" role="button"><i
+                class="fas fa-file-download" style="font-size: 24px;" aria-hidden="true"></i> Get My CV</a>
+        </div>
         <div class="mb-3 pb-4 text-dark">
             <div class="icon">
                 <a href="https://www.instagram.com/ar.dev21__/" rel="noopener" aria-label="Instragam" class="active" target="_blank"><i
@@ -69,8 +75,8 @@ src="../src/public/images/coding1.png" alt="Abdulrahman"
                         aria-hidden="true"></i></a>
             </div>
         </div>
+        </div>
     </div>
-</section>
     </header>
     <!--Ini Akhir Navigasi-->
                   `;
