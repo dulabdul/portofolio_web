@@ -8,9 +8,10 @@ class kontenBar extends HTMLElement {
         this.innerHTML = /* html */ `
       <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
       <section id="skills">
-      <div class="tagline-skills mt-3">
+      <div class="heading-konten mt-3">
           <h2 class="text-white text-center">What Skill & Tools</h2>
           <h2 class="text-white text-center">I Have for You</h2>
+          <hr>
       </div>
       <div class="container">
           <div class="row justify-content-center ">
@@ -52,9 +53,10 @@ class kontenBar extends HTMLElement {
   </section>
       <section id="project" class="pb-5">
       <div class="container">
-          <div class="col-12 heading mb-2">
-            <h2 class="text-center fs-1 font-weight-bold text-white heading__tagline">Check Out</h2>
+          <div class="col-12 heading-konten mb-2">
+            <h2 class="text-center mt-2 fs-1 font-weight-bold text-white heading__tagline">Check Out</h2>
             <h2 class="text-center mb-3 fs-2 font-weight-bold text-white heading__tagline">My Recent Project</h2>
+            <hr>
         </div>
     <div id="carouselExampleDark" class="carousel slide carousel-dark slide" data-bs-ride="carousel">
       <div class="row align-items-center">
@@ -77,9 +79,10 @@ class kontenBar extends HTMLElement {
                 <div class="row align-items-center p-3">
                   <div class="col-md-6">
                     <p class="title-project fw-bold fs-4 pt-4 ps-4 poppins">Live Report Covid-19</p><br>
-                    <p class="text-white fs-6 ps-4 pe-5">Website yang menampilkan statistik <br>
-                      Front end : HTML | CSS | Javascript | Bootstrap <br>
-                      Back end : Native PHP | Mysql</p>
+                    <p class="text-white fs-6 ps-4 pe-5">Website yang menampilkan data kasus Covid-19 secara realtime, data didapat dari API covid-19 open source.
+                    </a><br>
+                      Technology : HTML, CSS, Javascript,Bootstrap, NodeJs, Webpack, PWA(Progressive Webs Apps), Lazyload 
+                      <br></p>
                       <a href="https://infocorona-e90fb.web.app/" rel="noopener" aria-label="Website Covid" target="_blank"
                         class="go btn btn-success"><i class="fas fa-external-link-alt" style="font-size: 24px;"></i> Demo</a>
                         <a href="https://github.com/dulabdul/Web_Corona_Info.git" rel="noopener" aria-label="Github_covid" target="_blank" class="go ml-1 btn btn-success"><i class="fab fa-github" style="font-size:24px;"></i> Github</a>
@@ -103,18 +106,23 @@ class kontenBar extends HTMLElement {
             <div class="card bg-skills border-0">
             <div class="row align-items-center p-3">
               <div class="col-md-6">
-                <p class="title-project fw-bold fs-4 pt-4 ps-4 poppins">Sistem Informasi Administrasi</p><br>
-                <p class="text-white fs-6 ps-4 pe-5">Project magang di dinas pendidikan, membuat sistem informasi untuk pencatatan surat masuk dan keluar. <br>
-                  Front end : HTML | CSS | Javascript | Bootstrap <br>
-                  Back end : Native PHP | Mysql</p>
-                  <a href="https://infocorona-e90fb.web.app/" rel="noopener" aria-label="Website Covid" target="_blank"
+                <p class="title-project fw-bold fs-4 pt-4 ps-4 poppins">SoccerBall</p><br>
+                <p class="text-white fs-6 ps-4 pe-5">Project yang menampilkan klasemen pertandingan bola liga spanyol dan jadwal tanding. Memiliki fitur untuk menmyimpan team favorit dan pertandingan favorit dan push notificaton <br>
+                Technology : HTML, CSS, Javascript, Materialize CSS, NodeJs, Webpack, PWA(Progressive Webs Apps) <br>
+                 </p>
+                  <a href="https://mysoccer-584dc.web.app/" rel="noopener" aria-label="Website SoccerBall" target="_blank"
                   class="go btn btn-success"><i class="fas fa-external-link-alt" style="font-size: 24px;"></i> Demo</a>
-                  <a href="https://github.com/dulabdul/Web_Corona_Info.git" rel="noopener" aria-label="Github_covid" target="_blank" class="go ml-1 btn btn-success"><i class="fab fa-github" style="font-size:24px;"></i>
+                  <a href="https://github.com/dulabdul/PWA-Dicoding-MySoccer.git" rel="noopener" aria-label="Github_soccerBall" target="_blank" class="go ml-1 btn btn-success"><i class="fab fa-github" style="font-size:24px;"></i>
                   Github</a>
               </div>
               <div class="col-md-6 p-3 pe-5">
-                <a href="https://suratdispendik.000webhostapp.com">
-                  <img src="./dist/solid-large.jpg" class="card-img-top shadow" alt="...">
+                <a href="https://mysoccer-584dc.web.app/">
+                <picture>
+                <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)"
+                    srcset="./dist/project2-small.jpg">
+                <img src="./dist/project2-large.jpg" alt="Website mySoccer"
+                    class="lazyload project-img card-img-top img-fluid">
+            </picture>
                 </a>
               </div>
             </div>
@@ -127,28 +135,106 @@ class kontenBar extends HTMLElement {
             <div class="card bg-skills border-0">
             <div class="row align-items-center p-3">
               <div class="col-md-6">
-                <p class="title-project fw-bold fs-4 pt-4 ps-4 poppins">Sistem Informasi Administrasi</p><br>
-                <p class="text-white fs-6 ps-4 pe-5">Project magang di dinas pendidikan, membuat sistem informasi untuk pencatatan surat masuk dan keluar. <br>
-                  Front end : HTML | CSS | Javascript | Bootstrap <br>
-                  Back end : Native PHP | Mysql</p>
-                  <a href="https://infocorona-e90fb.web.app/" rel="noopener" aria-label="Website Covid" target="_blank"
+                <p class="title-project fw-bold fs-4 pt-4 ps-4 poppins">The Resto</p><br>
+                <p class="text-white fs-6 ps-4 pe-5">Project kelas "Menjadi Front-End Developer Expert" di <a href="dicoding.com">Dicoding Indonesia</a>. Menampilkan list restaurant, fitur liked restaurant, fitur search. <br>
+                Technology : HTML, CSS, Javascript, NodeJs, Webpack, PWA(Progressive Webs Apps), Lazyload, Intregation Testing, dan E2E Testing  <br></p>
+                  <a href="https://theresto-fc91d.web.app/" rel="noopener" aria-label="Website Covid" target="_blank"
                   class="go btn btn-success"><i class="fas fa-external-link-alt" style="font-size: 24px;"></i> Demo</a>
-                  <a href="https://github.com/dulabdul/Web_Corona_Info.git" rel="noopener" aria-label="Github_covid" target="_blank" class="go ml-1 btn btn-success"><i class="fab fa-github" style="font-size:24px;"></i> Github</a>
+                  <a href="https://github.com/dulabdul/The-Resto.git" rel="noopener" aria-label="Github_the-resto" target="_blank" class="go ml-1 btn btn-success"><i class="fab fa-github" style="font-size:24px;"></i> Github</a>
               </div>
               <div class="col-md-6 p-3 pe-5">
-                <a href="https://suratdispendik.000webhostapp.com">
-                  <img src="./dist/solid-large.jpg" class="card-img-top shadow" alt="...">
+                <a href="https://theresto-fc91d.web.app/">
+                <picture>
+                <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)"
+                    srcset="./dist/project3-small.jpg">
+                <img src="./dist/project3-large.jpg" alt="Website The Resto"
+                    class="lazyload project-img card-img-top img-fluid">
+            </picture>
                 </a>
               </div>
             </div>
           </div>
             </div>
             <!-- End Of Project 3 -->
-
+            <!-- Project 4 -->
+            <div class="carousel-item">
+            <div class="card bg-skills border-0">
+            <div class="row align-items-center p-3">
+              <div class="col-md-6">
+                <p class="title-project fw-bold fs-4 pt-4 ps-4 poppins">Publik Nasional</p><br>
+                <p class="text-white fs-6 ps-4 pe-5">Website artikel berita<br></p>
+                  <a href="https://publiknasional.com/" rel="noopener" aria-label="Website Covid" target="_blank"
+                  class="go btn btn-success"><i class="fas fa-external-link-alt" style="font-size: 24px;"></i> Demo</a>
+              </div>
+              <div class="col-md-6 p-3 pe-5">
+                <a href="https://publiknasional.com/">
+                <picture>
+                <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)"
+                    srcset="./dist/publiknasional-small.jpg">
+                <img src="./dist/publiknasional-large.jpg" alt="Website The Resto"
+                    class="lazyload project-img card-img-top img-fluid">
+            </picture>
+                </a>
+              </div>
+            </div>
+          </div>
+            </div>
+            <!-- End of Project 4 -->
+          <!-- Project 5 -->
+          <div class="carousel-item">
+          <div class="card bg-skills border-0">
+          <div class="row align-items-center p-3">
+            <div class="col-md-6">
+              <p class="title-project fw-bold fs-4 pt-4 ps-4 poppins">Nonton Kuy</p><br>
+              <p class="text-white fs-6 ps-4 pe-5">Project yang menampilkan daftar film secara realtime, data diambil dengan API <a href="https://www.themoviedb.org/">themoviedb</a> <br>
+              Technology : HTML, CSS, Javascript, NodeJs, Webpack, PWA(Progressive Webs Apps), Lazyload, Intregation Testing, dan E2E Testing  <br></p>
+                <a href="https://nonton-kuy.web.app/" rel="noopener" aria-label="Website Covid" target="_blank"
+                class="go btn btn-success"><i class="fas fa-external-link-alt" style="font-size: 24px;"></i> Demo</a>
+                <a href="https://github.com/dulabdul/movie-katalog.git" rel="noopener" aria-label="Github_Nonton_Kuy" target="_blank" class="go ml-1 btn btn-success"><i class="fab fa-github" style="font-size:24px;"></i> Github</a>
+            </div>
+            <div class="col-md-6 p-3 pe-5">
+              <a href="https://nonton-kuy.web.app/">
+              <picture>
+              <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)"
+                  srcset="./dist/project4-small.jpg">
+              <img src="./dist/project4-large.jpg" alt="Website Nonton Kuy"
+                  class="lazyload project-img card-img-top img-fluid">
+          </picture>
+              </a>
+            </div>
           </div>
         </div>
+          </div>
+          <!-- End of Project 5 -->
+        <!-- Project 6 -->
+        <div class="carousel-item">
+        <div class="card bg-skills border-0">
+        <div class="row align-items-center p-3">
+          <div class="col-md-6">
+            <p class="title-project fw-bold fs-4 pt-4 ps-4 poppins">Sistem Informasti Perpustakaan</p><br>
+            <p class="text-white fs-6 ps-4 pe-5">Project sistem informasi perpustakaan dibangun dengan native PHP</a> <br>
+            Technology : HTML, CSS, PHP, MySQL, Bootstrap  <br></p>
+              <a href="https://abdul-sipus.000webhostapp.com/" rel="noopener" aria-label="Website Covid" target="_blank"
+              class="go btn btn-success"><i class="fas fa-external-link-alt" style="font-size: 24px;"></i> Demo</a>
+              <a href="https://github.com/dulabdul/digital-sipus.git" rel="noopener" aria-label="Github_Nonton_Kuy" target="_blank" class="go ml-1 btn btn-success"><i class="fab fa-github" style="font-size:24px;"></i> Github</a>
+          </div>
+          <div class="col-md-6 p-3 pe-5">
+            <a href="https://abdul-sipus.000webhostapp.com/">
+            <picture>
+            <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)"
+                srcset="./dist/project5-small.jpg">
+            <img src="./dist/project5-large.jpg" alt="Website Nonton Kuy"
+                class="lazyload project-img card-img-top img-fluid">
+        </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+        </div>
+        <!-- End of Project 6 -->
+        </div>
         <!-- End Of Project Items -->
-          
+          </div>
         <!-- Button Next -->
         <div class="col-1 text-center">
           <button class="project border-0" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
@@ -164,6 +250,9 @@ class kontenBar extends HTMLElement {
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
     </div>
 
     </div>
@@ -172,8 +261,8 @@ class kontenBar extends HTMLElement {
       <section id="sertifikat">
           <div class="container">
               <div class="row justify-content-center">
-                  <div class="col-12 heading mb-4">
-                      <h2 class="text-center mb-3 fs-1 font-weight-bold heading__tagline">Certificate</h2>
+                  <div class="col-12 heading-konten mb-4">
+                      <h2 class="text-center mb-3 fs-1 font-weight-bold heading__tagline text-white">Certificate</h2>
                       <hr>
                   </div>
                   <div class="col-md-4 mb-3">
@@ -186,8 +275,8 @@ class kontenBar extends HTMLElement {
                   </picture>
                   </a>
                       </div>
-                      <p class="font-weight-bold">Belajar Prinsip Pemprogaman Solid <span
-                              class="d-block font-weight-normal">Dicoding
+                      <p class="font-weight-bold title-certificate">Belajar Prinsip Pemprogaman Solid <span
+                              class="d-block font-weight-light text-white">Dicoding
                               Indonesia</span>
                       </p>
                   </div>
@@ -201,8 +290,8 @@ class kontenBar extends HTMLElement {
                   </picture>
                   </a>
                       </div>
-                      <p class="font-weight-bold">Belajar Dasar Pemprogaman Web <span
-                              class="d-block font-weight-normal">Dicoding
+                      <p class="font-weight-bold title-certificate">Belajar Dasar Pemprogaman Web <span
+                              class="d-block font-weight-light text-white">Dicoding
                               Indonesia</span>
                       </p>
                   </div>
@@ -216,8 +305,8 @@ class kontenBar extends HTMLElement {
                   </picture>
                   </a>
                       </div>
-                      <p class="font-weight-bold">Belajar Fundamental Front-End Web <span
-                              class="d-block font-weight-normal">Dicoding
+                      <p class="font-weight-bold title-certificate">Belajar Fundamental Front-End Web <span
+                              class="d-block font-weight-light text-white">Dicoding
                               Indonesia</span>
                       </p>
                   </div>
@@ -232,8 +321,8 @@ class kontenBar extends HTMLElement {
                   </a>
                        
                       </div>
-                      <p class="font-weight-bold">Membangun Progressive Web Apps<span
-                              class="d-block font-weight-normal">Dicoding
+                      <p class="font-weight-bold title-certificate">Membangun Progressive Web Apps<span
+                              class="d-block font-weight-light text-white">Dicoding
                               Indonesia</span>
                       </p>
                   </div>
@@ -247,8 +336,8 @@ class kontenBar extends HTMLElement {
                   </picture>
                   </a>
                       </div>
-                      <p class="font-weight-bold">Menjadi Front-End Web Developer Expert <span
-                              class="d-block font-weight-normal">Dicoding
+                      <p class="font-weight-bold title-certificate">Menjadi Front-End Web Developer Expert <span
+                              class="d-block font-weight-light text-white">Dicoding
                               Indonesia</span>
                       </p>
                   </div>
@@ -258,12 +347,12 @@ class kontenBar extends HTMLElement {
       <section id="contact">
           <div class="container-md">
               <div class="row">
-                  <div class="col-12 heading">
-                      <h2 class="text-center fs-1 font-weight-bold heading__tagline">Contact Me</h2>
+                  <div class="col-12 heading-konten">
+                      <h2 class="text-center fs-1 font-weight-bold heading__tagline text-white mt-2">Get In Touch</h2>
                       <hr>
                   </div>
                   <div class="col-12 section_head_contact text-start mt-5" data-aos-once="true" data-aos="fade-right" data-aos-delay="100"data-aos-duration="1200">
-                      <h3><span>Informasi</span> Kontak</h3>
+                      <p class="title-certificate font-weight-light"><span>Contact</span> Information</p>
                   </div>
               </div>
               <div class="row section__contact">
@@ -273,8 +362,8 @@ class kontenBar extends HTMLElement {
                                   aria-hidden="true"></i></a>
                       </div>
                       <div class=" contact-text w-75 ml-2">
-                                  <p class="font-weight-bold fs-4 text-start">Telepon</p>
-                                  <p class="font-weight-light fs-6 text-start">+6289675293838</p>
+                                  <p class="font-weight-normal fs-4 text-start title-certificate">Telephone</p>
+                                  <p class="font-weight-light text-white fs-6 text-start">+6289675293838</p>
                       </div>
                   </div>
                   <div class="col-md d-flex mt-3" data-aos-once="true" data-aos="fade-up" data-aos-delay="250"data-aos-duration="1200">
@@ -283,8 +372,8 @@ class kontenBar extends HTMLElement {
                                   aria-hidden="true"></i></a>
                       </div>
                       <div class="contact-text w-75 ml-2">
-                          <p class="font-weight-bold fs-4 text-start">Email</p>
-                          <p class="font-weight-light fs-6 text-start">dulabdol331@gmail.com</p>
+                          <p class="font-weight-normal fs-4 text-start title-certificate">Email</p>
+                          <p class="font-weight-light text-white fs-6 text-start">dulabdol331@gmail.com</p>
                       </div>
                   </div>
                   <div class="col-md d-flex mt-3" data-aos-once="true" data-aos="fade-up-left" data-aos-delay="300"data-aos-duration="1200">
@@ -292,16 +381,14 @@ class kontenBar extends HTMLElement {
                           <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                       </div>
                       <div class="contact-text w-75 ml-2">
-                          <p class="font-weight-bold fs-4 text-start">Alamat</p>
-                          <p class="font-weight-light fs-6 text-start">Perumahan Puri Serang Hijau, Kota
-                              Serang,
-                              Banten 42121</p>
+                          <p class="font-weight-normal fs-4 text-start title-certificate">Address</p>
+                          <p class="font-weight-light text-white fs-6 text-start">Jakarta Utara, Indonesia</p>
                       </div>
                   </div>
               </div>
               <div class="row">
                   <div class="col-12 section_head_sosmed text-start" data-aos-once="true" data-aos="fade-right" data-aos-delay="100"data-aos-duration="1200">
-                      <h3><span>Informasi</span>Media Sosial</h3>
+                      <p class="title-certificate font-weight-italic"><span>Sosial Media</span>Information</p>
                   </div>
               </div>
               <div class="pt-30">

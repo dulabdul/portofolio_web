@@ -7,22 +7,19 @@ class navBar extends HTMLElement {
     _render() {
         this.innerHTML = /* html */ `
         <header>
-              <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent topnav " id="nav-area">
+              <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-color topnav " id="nav-area">
         <div class="container">
             <div class="nav-name">
                 <a class="navbar-brand" href="#">Abdul <span>Rahman</span></a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icons"><i class="fas fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav nav-pills navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-url nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-url nav-link" href="#about">About Me</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-url nav-link" href="#project">Project</a>
@@ -38,7 +35,7 @@ class navBar extends HTMLElement {
             </div>
         </div>
     </nav>
-    <div class="container home">
+    <div class="container home" id="home">
         <div class="jumbotron bg-transparent">
             <div class="row justify-content-evenly">
                 <div class="col-md-6 text-start">
@@ -51,7 +48,7 @@ class navBar extends HTMLElement {
                 </div>
                 <div class="col-md-6 mt-4">
                 <img  data-aos="flip-up" data-aos-duration="1500"
-src="../src/public/images/coding1.png" alt="Abdulrahman"
+src="./dist/icons/coding1.png" alt="Abdulrahman"
                 class="lazyload profile-img img-fluid">
                 </div>
             </div>
