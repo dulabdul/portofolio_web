@@ -19,28 +19,28 @@ class kontenBar extends HTMLElement {
                   <div class="card bg-skills">
                       <div class="card-body ">
                           <div class="col img-icons">
-                              <img src="../src/public/icons/html.svg" class="lazyload img-fluid img-svg-html"
+                              <img src="./icons/html.svg" class="lazyload img-fluid img-svg-html"
                                   alt="HTML Icons">
-                              <img src="../src/public/icons/css3.svg" class="lazyload img-fluid img-svg-css"
+                              <img src="./icons/css3.svg" class="lazyload img-fluid img-svg-css"
                                   alt="CSS Icons">
-                              <img src="../src/public/icons/javascript.svg" class="lazyload img-fluid img-svg-js"
+                              <img src="./icons/javascript.svg" class="lazyload img-fluid img-svg-js"
                                   alt="Javascript Icons">
-                              <img src="../src/public/icons/php.svg" class="lazyload img-fluid img-svg-php"
+                              <img src="./icons/php.svg" class="lazyload img-fluid img-svg-php"
                                   alt="PHP Icons">
-                              <img src="../src/public/icons/bootstrap.svg" class="lazyload img-fluid img-svg-bts"
+                              <img src="./icons/bootstrap.svg" class="lazyload img-fluid img-svg-bts"
                                   alt="Bootstrap Icons">
-                              <img src="../src/public/icons/git.svg" class="lazyload img-fluid img-svg-git"
+                              <img src="./icons/git.svg" class="lazyload img-fluid img-svg-git"
                                   alt="GIT Icons">
-                              <img src="../src/public/icons/vscode.svg" class="lazyload img-fluid img-svg-vscode"
+                              <img src="./icons/vscode.svg" class="lazyload img-fluid img-svg-vscode"
                                   alt="Visual Studio Code Icons">
-                                  <img src="../src/public/icons/webpack.png" class="lazyload img-fluid"
+                                  <img src="./icons/webpack.png" class="lazyload img-fluid"
                                   alt="Webpack Icons">
-                              <img src="../src/public/icons/nodejs.png" class="lazyload img-fluid" alt="NodeJs Icons">
-                              <img src="../src/public/icons/pwa1.png" class="lazyload img-fluid"
+                              <img src="./icons/nodejs.png" class="lazyload img-fluid" alt="NodeJs Icons">
+                              <img src="./icons/pwa1.png" class="lazyload img-fluid"
                                   alt="Progressive Web Apps Icons">
-                              <img src="../src/public/icons/wordpress.png" class="lazyload img-fluid"
+                              <img src="./icons/wordpress.png" class="lazyload img-fluid"
                                   alt="Wordpress Icons">
-                              <img src="../src/public/icons/adobe-xd.png" class="lazyload img-fluid"
+                              <img src="./icons/adobe-xd.png" class="lazyload img-fluid"
                                   alt="Adobe Xd Icons">
                           </div>
 
@@ -90,8 +90,8 @@ class kontenBar extends HTMLElement {
                   <div class="col-md-6 p-3 pe-5">
                   <a href="https://infocorona-e90fb.web.app/" rel="noopener" aria-label="Website Covid" target="_blank">
                     <picture>
-                    <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="./dist/project1-small.jpg">
-                    <img src="./dist/project1-large.jpg" alt="Website Covid"
+                    <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)" srcset="project1-small.jpg">
+                    <img src="project1-large.jpg" alt="Website Covid"
                     class="lazyload project-img card-img-top img-fluid">
                 </picture>
                     </a>
@@ -119,8 +119,8 @@ class kontenBar extends HTMLElement {
                 <a href="https://mysoccer-584dc.web.app/">
                 <picture>
                 <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)"
-                    srcset="./dist/project2-small.jpg">
-                <img src="./dist/project2-large.jpg" alt="Website mySoccer"
+                    srcset="project2-small.jpg">
+                <img src="project2-large.jpg" alt="Website mySoccer"
                     class="lazyload project-img card-img-top img-fluid">
             </picture>
                 </a>
@@ -146,8 +146,8 @@ class kontenBar extends HTMLElement {
                 <a href="https://theresto-fc91d.web.app/">
                 <picture>
                 <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)"
-                    srcset="./dist/project3-small.jpg">
-                <img src="./dist/project3-large.jpg" alt="Website The Resto"
+                    srcset="project3-small.jpg">
+                <img src="project3-large.jpg" alt="Website The Resto"
                     class="lazyload project-img card-img-top img-fluid">
             </picture>
                 </a>
@@ -170,8 +170,8 @@ class kontenBar extends HTMLElement {
                 <a href="https://publiknasional.com/">
                 <picture>
                 <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)"
-                    srcset="./dist/publiknasional-small.jpg">
-                <img src="./dist/publiknasional-large.jpg" alt="Website The Resto"
+                    srcset="publiknasional-small.jpg">
+                <img src="publiknasional-large.jpg" alt="Website The Resto"
                     class="lazyload project-img card-img-top img-fluid">
             </picture>
                 </a>
@@ -196,8 +196,8 @@ class kontenBar extends HTMLElement {
               <a href="https://nonton-kuy.web.app/">
               <picture>
               <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)"
-                  srcset="./dist/project4-small.jpg">
-              <img src="./dist/project4-large.jpg" alt="Website Nonton Kuy"
+                  srcset="project4-small.jpg">
+              <img src="project4-large.jpg" alt="Website Nonton Kuy"
                   class="lazyload project-img card-img-top img-fluid">
           </picture>
               </a>
@@ -222,8 +222,8 @@ class kontenBar extends HTMLElement {
             <a href="https://abdul-sipus.000webhostapp.com/">
             <picture>
             <source class="lazyload project-img card-img-top img-fluid" media="(max-width: 600px)"
-                srcset="./dist/project5-small.jpg">
-            <img src="./dist/project5-large.jpg" alt="Website Nonton Kuy"
+                srcset="project5-small.jpg">
+            <img src="project5-large.jpg" alt="Website Nonton Kuy"
                 class="lazyload project-img card-img-top img-fluid">
         </picture>
             </a>
@@ -269,8 +269,8 @@ class kontenBar extends HTMLElement {
                       <div class="card-project shadow" data-aos="zoom-in-up" data-aos-delay="100"data-aos-duration="1200">
                       <a href="https://www.dicoding.com/certificates/L4PQM1E92ZO1" rel="noopener" aria-label="Sertifikat" target="_blank">
                       <picture>
-                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./dist/solid-small.jpg">
-                      <img src="./dist/solid-large.jpg" alt="Sertifikat_Solid"
+                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="solid-small.jpg">
+                      <img src="solid-large.jpg" alt="Sertifikat_Solid"
                       class="lazyload project-img img-fluid">
                   </picture>
                   </a>
@@ -284,8 +284,8 @@ class kontenBar extends HTMLElement {
                       <div class="card-project shadow" data-aos="zoom-in-up" data-aos-delay="150"data-aos-duration="1200">
                       <a href="https://www.dicoding.com/certificates/2VX3NRK0QXYQ" rel="noopener" aria-label="Sertifikat" target="_blank">
                       <picture>
-                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./dist/solid-small.jpg">
-                      <img src="./dist/web-large.jpg" alt="Sertifikat Dasar Web"
+                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="solid-small.jpg">
+                      <img src="web-large.jpg" alt="Sertifikat Dasar Web"
                       class="lazyload project-img img-fluid">
                   </picture>
                   </a>
@@ -299,8 +299,8 @@ class kontenBar extends HTMLElement {
                       <div class="card-project shadow" data-aos="zoom-in-up" data-aos-delay="200"data-aos-duration="1200">
                       <a href="https://www.dicoding.com/certificates/GRX5GO3WVX0M" rel="noopener" aria-label="Sertifikat" target="_blank">
                       <picture>
-                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./dist/fundamental-small.jpg">
-                      <img src="./dist/fundamental-large.jpg" alt="Sertifikat Fundamental Web"
+                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="fundamental-small.jpg">
+                      <img src="fundamental-large.jpg" alt="Sertifikat Fundamental Web"
                       class="lazyload project-img img-fluid">
                   </picture>
                   </a>
@@ -314,8 +314,8 @@ class kontenBar extends HTMLElement {
                       <div class="card-project shadow" data-aos="zoom-in-up" data-aos-delay="250"data-aos-duration="1200">
                       <a href="https://www.dicoding.com/certificates/QLZ98739EX5D" rel="noopener" aria-label="Sertifikat" target="_blank">
                       <picture>
-                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./dist/mpwa-small.jpg">
-                      <img src="./dist/mpwa-large.jpg" alt="Sertifikat MPWA"
+                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="mpwa-small.jpg">
+                      <img src="mpwa-large.jpg" alt="Sertifikat MPWA"
                       class="lazyload project-img img-fluid">
                   </picture>
                   </a>
@@ -330,8 +330,8 @@ class kontenBar extends HTMLElement {
                       <div class="card-project shadow" data-aos="zoom-in-up" data-aos-delay="300"data-aos-duration="1200">
                       <a href="https://www.dicoding.com/certificates/MEPJLEER6Z3V" rel="noopener" aria-label="Sertifikat" target="_blank">
                       <picture>
-                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="./dist/mfwde-small.jpg">
-                      <img src="./dist/mfwde-large.jpg" alt="Sertifikat MFWDE"
+                      <source class="lazyload project-img img-fluid" media="(max-width: 600px)" srcset="mfwde-small.jpg">
+                      <img src="mfwde-large.jpg" alt="Sertifikat MFWDE"
                       class="lazyload project-img img-fluid">
                   </picture>
                   </a>

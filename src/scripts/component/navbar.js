@@ -47,8 +47,8 @@ class navBar extends HTMLElement {
                     </p>
                 </div>
                 <div class="col-md-6 mt-4">
-                <img  data-aos="flip-up" data-aos-duration="1500"
-src="./dist/icons/coding1.png" alt="Abdulrahman"
+                <img  data-aos="zoom-in" data-aos-delay="4000"
+src="./src/public/icons/coding1.png" alt="Abdulrahman"
                 class="lazyload profile-img img-fluid">
                 </div>
             </div>
