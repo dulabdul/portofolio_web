@@ -22,6 +22,21 @@ header {
   transition: all 0.2s ease-in-out;
 }
 
+.navbar-toggler-icons {
+  display: inline-block;
+  font-size: 30px;
+  color: #ececec;
+  vertical-align: middle;
+  content: "";
+  background: 50% / 100% 100% no-repeat
+}
+
+.bgcolor,
+.scrolled {
+  background-color: #474d66;
+  transition: all 0.3s linear;
+}
+
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
   background-color: #00CC8F !important;
@@ -209,7 +224,8 @@ section {
 /* akhir Home */
 /* skills */
 #skills,
-#project {
+#project,
+#contact {
   background-color: #282B38;
 }
 
@@ -251,7 +267,27 @@ section {
   filter: invert(57%) sepia(62%) saturate(1111%) hue-rotate(176deg) brightness(87%) contrast(90%);
 }
 
+.heading-konten hr {
+  box-sizing: border-box;
+  overflow: visible;
+  margin: auto;
+  width: 60px;
+  height: 3px;
+  background-color: #00CC8F;
+  margin-bottom: 20px;
+}
+
 /* akhir Skills */
+/* sertifikat */
+#sertifikat {
+  background-image: linear-gradient(180deg, #3e4253, #323647);
+}
+
+.title-certificate {
+  color: #00CC8F;
+}
+
+/* end sertikat */
 /*contact */
 .icon-contact i {
   font-size: 45px;
@@ -263,28 +299,27 @@ section {
   position: relative;
 }
 
-.section_head_contact h3 {
+.section_head_contact p {
   position: relative;
   padding: 0 0 0 15px;
   line-height: 1px;
   border-left: 1px solid #eee;
   letter-spacing: 2px;
   font-size: 26px;
-  font-weight: 600;
   margin-bottom: 0;
 }
 
-.section_head_contact h3 span {
-  font-weight: 300;
+.section_head_contact p span {
+  font-weight: 600;
   display: block;
   padding-bottom: 35px;
 }
 
-.section_head_contact h3:before {
+.section_head_contact p:before {
   background: #00CC8F;
 }
 
-.section_head_contact h3:before {
+.section_head_contact p:before {
   content: '';
   width: 1px;
   height: 45px;
@@ -299,15 +334,15 @@ section {
   position: relative;
 }
 
-.section_head_sosmed h3 {
+.section_head_sosmed p {
   position: relative;
   padding: 0 0 0 15px;
   line-height: 1px;
   border-left: 1px solid #eee;
   letter-spacing: 2px;
   font-size: 26px;
-  font-weight: 600;
   margin-bottom: 0;
+  font-weight: 300;
 }
 
 .section__contact p {
@@ -316,17 +351,17 @@ section {
   margin-bottom: .5rem;
 }
 
-.section_head_sosmed h3 span {
-  font-weight: 300;
+.section_head_sosmed p span {
   display: block;
   padding-bottom: 35px;
+  font-weight: 600;
 }
 
-.section_head_sosmed h3::before {
+.section_head_sosmed p::before {
   background: #00CC8F;
 }
 
-.section_head_sosmed h3::before {
+.section_head_sosmed p::before {
   content: '';
   width: 1px;
   height: 55px;
@@ -341,7 +376,7 @@ section {
 }
 
 .social-media-container {
-  background-color: #f7f9fc;
+  background-color: #383b4e;
   padding: 30px 20px;
   position: relative;
 }
@@ -352,13 +387,11 @@ section {
 }
 
 .social-media-container a {
-  color: #00CC8F;
+  color: #fff;
   font-size: 16px;
   width: 60px;
   height: 60px;
   text-align: center;
-  background: #fff;
-  border: 1px solid #eee;
   border-radius: 100%;
   margin-right: 15px;
   box-shadow: 2px 2px 20px rgb(0 0 0 / 15%);
@@ -366,7 +399,7 @@ section {
 }
 
 .social-media-container a:hover {
-  color: #000;
+  color: #00CC8F;
   padding-bottom: 10px;
   border-bottom: 3px solid #00CC8F;
   transform: scale(1.1);
@@ -618,7 +651,7 @@ section {
 
 /* CSS Footer */
 .footer {
-  background-color: #aa01013a;
+  background-color: #282B38;
   display: block;
 }
 
@@ -629,6 +662,10 @@ section {
 
 .about-hobi i {
   font-size: 140px;
+}
+
+.footer p i {
+  color: #FF819F;
 }
 
 /* Akhir Css Footer */
