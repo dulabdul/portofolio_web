@@ -36,7 +36,7 @@ gsap.to('.last-name', {
   text: 'Rahman',
 });
 gsap.to('.title-job', {
-  duration: 1.5,
+  duration: 1.2,
   delay: 5.2,
   text: 'Front-End Web Developer',
 });
@@ -60,8 +60,8 @@ $(document).ready(() => {
   });
 });
 // Navbar On Scroll
-// window.addEventListener('scroll', scroll, function () {
-//   let nav = document.querySelector('#nav-area');
-//   nav.classList.toggle('sticky', window.scrollY > 0);
-// })
-// End Navbar On Scroll
+$(window).scroll(function () {
+  $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+});
+
+// End
