@@ -3,8 +3,8 @@ const sharp = require('sharp');
 const fs = require('fs');
 const path = require('path');
 
-const target = path.resolve(__dirname, 'src/public/images');
-const destination = path.resolve(__dirname, 'dist');
+const target = path.resolve(__dirname, 'src/public/images_ori');
+const destination = path.resolve(__dirname, 'src/public/images');
 
 if (!fs.existsSync(destination)) {
   fs.mkdirSync(destination);

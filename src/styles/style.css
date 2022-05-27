@@ -3,8 +3,10 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
   position: relative;
+  font-family: 'Roboto Mono', monospace;
 }
 
 header {
@@ -459,9 +461,6 @@ section {
   transition: transform 0.2s;
 }
 
-.profile-img:hover {
-  transform: scale(1.1);
-}
 
 .go {
   min-width: 44px;
@@ -479,12 +478,6 @@ section {
   color: #00CC8F;
 }
 
-.hamburger,
-.button-call {
-  min-width: 44px;
-  min-height: 44px;
-}
-
 /* img project */
 .project-img {
   transition: transform 0.2s;
@@ -494,22 +487,12 @@ section {
   transform: scale(1.1);
 }
 
-.card-title {
-  font-weight: 600;
-  font-size: 18px;
-}
-
 .carousel-control-prev,
 .carousel-control-next {
   background-color: unset;
   top: unset !important;
   bottom: 50% !important;
   opacity: unset !important;
-}
-
-.img-carousel img {
-  width: 400px;
-  margin: auto;
 }
 
 .carousel-indicators {
@@ -580,12 +563,6 @@ section {
     padding: 0;
   }
 
-  .ml-1,
-  .mx-1 {
-    margin-top: 8px !important;
-    margin-left: 0 !important;
-  }
-
   .profile-img {
     margin: auto;
   }
@@ -600,31 +577,15 @@ section {
     font-size: 22px;
   }
 
-  .about-hobi i {
-    font-size: 75px;
-  }
-
-  .about-img img {
-    width: 65%;
-    margin: auto;
-    display: block;
-  }
-
   .jumbotron {
     padding: 2rem;
     margin-top: 40px;
   }
 
-  a.download.button-sm-call.ml-3.btn.btn-outline-danger.text-start {
-    color: #000 !important;
-  }
 
-  a.download.button-sm-call.ml-3.btn.btn-outline-danger.text-start:hover {
-    color: #fff;
-  }
 }
 
-@media screen and (max-width: 900px) and (min-width: 480px) {
+@media screen and (max-width: 992px) and (min-width: 576px) {
   .img-icons img {
     margin-left: 35px;
   }
@@ -632,16 +593,6 @@ section {
   .card-project {
     width: 95%;
     margin: auto;
-  }
-
-  .about-hobi i {
-    font-size: 110px;
-  }
-
-  .about-img img {
-    width: 70%;
-    margin: auto;
-    display: block;
   }
 
   .jumbotron {
