@@ -45,7 +45,9 @@ module.exports = {
       {
         test: /\.css$/i,
         exclude: /styles/,
-        use: ['to-string-loader', 'css-loader'],
+        use: ['to-string-loader',
+          'css-loader'
+        ],
       },
       /* rules buat global style */
       {
@@ -66,28 +68,19 @@ module.exports = {
         loader: 'svg-inline-loader',
       },
       {
-        test: /\.(scss)$/,
-        use: [{
-            // Adds CSS to the DOM by injecting a `<style>` tag
-            loader: 'style-loader',
-          },
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          "style-loader",
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
           {
-            // Interprets `@import` and `url()` like `import/require()` and will resolve them
-            loader: 'css-loader',
-          },
-          {
-            // Loader for webpack to process CSS with PostCSS
-            loader: 'postcss-loader',
+            loader: "sass-loader",
             options: {
-              plugins() {
-                return [require('autoprefixer')];
-              },
+              // Prefer `dart-sass`
+              implementation: require("sass"),
             },
-          },
-
-          {
-            // Loads a SASS/SCSS file and compiles it to CSS
-            loader: 'sass-loader',
           },
         ],
       },
@@ -112,7 +105,7 @@ module.exports = {
         from: path.resolve(__dirname, 'src/public'),
         to: path.resolve(__dirname, 'dist'),
         globOptions: {
-          ignore: ['**/images/**'], // CopyWebpackPlugin mengabaikan berkas yang berada di dalam folder images
+          ignore: ['**/images_ori/**'], // CopyWebpackPlugin mengabaikan berkas yang berada di dalam folder images
         },
       }, ],
     }),
