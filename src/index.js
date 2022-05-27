@@ -1,6 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/app.scss';
-import './styles/style.css';
+import './styles/scss/main.scss';
+import './styles/scss/modules/_font.scss';
+import './styles/scss/modules/_mixin.scss';
+import './styles/scss/modules/_variables.scss';
+import './styles/css/main.css';
 import 'bootstrap';
 import 'regenerator-runtime';
 import $ from 'jquery';
