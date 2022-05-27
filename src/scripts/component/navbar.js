@@ -39,16 +39,16 @@ class navBar extends HTMLElement {
         <div class="jumbotron bg-transparent">
             <div class="row justify-content-evenly">
                 <div class="col-md-6 text-start">
-                    <h1 class="hallo text-white display-4 font-weight-bold"></h1>
-                    <span class="display-5 first-name font-weight-bold"></span>
-                    <p class="display-5 last-name font-weight-bold"></p>
-                    <h1 class="title-job text-white display-4 font-weight-normal fs-2 mt-2"></h1>
-                    <p class="title-info text-capitalize fs-3">
+                    <h1 class="hallo text-white font-weight-bold"></h1>
+                    <span class="first-name font-weight-bold"></span>
+                    <p class="last-name font-weight-bold"></p>
+                    <h2 class="title-job text-white font-weight-normal mt-2"></h2>
+                    <p class="title-info text-capitalize">
                     </p>
                 </div>
                 <div class="col-md-6 mt-4">
                 <img  data-aos="zoom-in" data-aos-delay="4000"
-src="./src/public/icons/coding1.png" alt="Abdulrahman"
+src="./icons/coding1.png" alt="Abdulrahman"
                 class="lazyload profile-img img-fluid">
                 </div>
             </div>
