@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/app.scss';
 import './styles/scss/main.scss';
@@ -16,10 +17,10 @@ import './scripts/component/konten-bar';
 import './scripts/component/footer-bar';
 // gsap
 import {
-  gsap
+  gsap,
 } from 'gsap';
 import {
-  TextPlugin
+  TextPlugin,
 } from 'gsap/TextPlugin';
 
 gsap.registerPlugin(TextPlugin);
@@ -47,7 +48,7 @@ gsap.to('.title-job', {
 gsap.to('.title-info', {
   duration: 3.5,
   delay: 6.5,
-  text: 'Turning your idea into a cool produk with a good web developer. Iam here to help your to turning idea to amazing product'
+  text: 'Turning your idea into a cool produk with a good web developer. Iam here to help your to turning idea to amazing product',
 });
 /*
 gsap.from('.display-4', {

@@ -483,6 +483,25 @@ class kontenBar extends HTMLElement {
                       </p>
                   </div>
                   <div class="col-md-4 mb-3">
+                      <div class="card-project shadow" data-aos="zoom-in-up" data-aos-delay="200"
+                          data-aos-duration="1200">
+                          <a href="https://www.dicoding.com/certificates/GRX5LOLLRP0M" rel="noopener"
+                              aria-label="Sertifikat" target="_blank">
+                              <picture>
+                                  <source class="lazyload project-img img-fluid" media="(max-width: 600px)"
+                                      srcset="./images/react-pemula-small.jpg">
+                                  <img src="./images/react-pemula-large.jpg"
+                                      alt="Certificate Learn to Build Web Apps with React"
+                                      class="lazyload project-img img-fluid">
+                              </picture>
+                          </a>
+                      </div>
+                      <p class="font-weight-bold title-certificate">Learn to Build Web Apps with React <span
+                              class="d-block font-weight-light text-white">Dicoding
+                              Indonesia</span>
+                      </p>
+                  </div>
+                  <div class="col-md-4 mb-3">
                       <div class="card-project shadow" data-aos="zoom-in-up" data-aos-delay="250"
                           data-aos-duration="1200">
                           <a href="https://www.dicoding.com/certificates/QLZ98739EX5D" rel="noopener"
@@ -615,4 +634,4 @@ class kontenBar extends HTMLElement {
   `;
   }
 }
-customElements.define("konten-bar", kontenBar);
+customElements.define('konten-bar', kontenBar);

@@ -1,11 +1,11 @@
 /* eslint-disable no-underscore-dangle */
 class navBar extends HTMLElement {
-    connectedCallback() {
-        this._render();
-    }
+  connectedCallback() {
+    this._render();
+  }
 
-    _render() {
-        this.innerHTML = /* html */ `
+  _render() {
+    this.innerHTML = /* html */ `
         <header>
               <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-color topnav " id="nav-area">
         <div class="container">
@@ -77,7 +77,7 @@ src="./icons/coding1.png" alt="Abdulrahman"
     </header>
     <!--Ini Akhir Navigasi-->
                   `;
-    }
+  }
 }
 
 customElements.define('nav-bar', navBar);
